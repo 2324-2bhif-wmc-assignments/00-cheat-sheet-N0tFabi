@@ -1,0 +1,21 @@
+/*
+CSS bestimmt folgendes:
+ - Layout
+ - Style
+ - Animationen
+
+Javascript bestimmt folgendes:
+ - Behaviour (Verhalten)
+ */
+
+/* somit wird jedes Element, das in einem 'img'-Tag ist die definiertden Eigenschaften zugewiesen.  */
+img {
+    width: 500px;
+}
+
+/* Child-Klasse des Modifiers des 'a'-Tags. Wenn Elemente eines 'a'-Tags gehovert werden (Maus drüber)
+ * werden diese Einstellungen für dieses Element übernommen */
+a:hover {
+    font-size: 50px;
+    color: tomato;
+}
