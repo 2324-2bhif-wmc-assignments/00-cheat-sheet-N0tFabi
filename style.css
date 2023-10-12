@@ -28,9 +28,20 @@ a:hover {
     color: tomato;
 }
 
-h1 {
-    font-size: larger;
-    background-color: yellow;
+a.topLink:link {
+    color: #fff;
+    background-color: #333;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+a.topLink:visited {
+    color: #fff;
+    background-color: #333;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
 }
 /* gezielt mehrere elemente stylen */
 .main-title {
@@ -46,7 +57,47 @@ h1.main:hover {
     background-color: transparent;
 }
 
-table, th, td {
-    border: 1px solid black;
+h1, h2 {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+table {
+    width: 80%;
+    margin: 20px auto;
     border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #333;
+    color: #fff;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+pre {
+    font-family: 'Courier New', monospace;
+}
+
+pre .comment {
+    color: green;
+}
+
+pre .selector {
+    color: blue;
+}
+
+pre .property {
+    color: red;
+}
+
+pre .value {
+    color: purple;
 }
