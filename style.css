@@ -59,12 +59,6 @@ h1.main:hover {
     transition-duration: 500ms;
 }
 
-h1.main:hover + * {
-    background-color: transparent;
-    color: black;
-    transition-duration: 500ms;
-}
-
 h1.main {
     background-color: #333;
     color: #fff;
