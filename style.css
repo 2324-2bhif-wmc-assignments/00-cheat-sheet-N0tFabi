@@ -30,7 +30,6 @@ a:hover {
 
 a.topLink:link {
     color: #fff;
-    background-color: #333;
     text-decoration: none;
     padding: 10px;
     border-radius: 5px;
@@ -71,21 +70,25 @@ h1, h2 {
     text-align: center;
     padding: 20px 0;
 }
+
 table {
     width: 80%;
     margin: 20px auto;
     border-collapse: collapse;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 th, td {
     border: 1px solid #ccc;
     padding: 10px;
     text-align: left;
 }
+
 th {
     background-color: #333;
     color: #fff;
 }
+
 tr:nth-child(even) {
     background-color: #f2f2f2;
 }
@@ -108,4 +111,19 @@ pre .property {
 
 pre .value {
     color: purple;
+}
+
+th.NavigationBar {
+    width: 33%;
+    text-align: center;
+}
+
+th.Clicked {
+    width: 33%;
+    text-align: center;
+    background-color: slategray;
+}
+
+table.NavigationBar {
+    width: 100%;
 }
