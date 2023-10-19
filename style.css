@@ -71,6 +71,14 @@ h1, h2 {
     padding: 20px 0;
 }
 
+h2 {
+    background-color: #444;
+}
+
+h3 {
+    background-color: #555;
+}
+
 table {
     width: 80%;
     margin: 20px auto;

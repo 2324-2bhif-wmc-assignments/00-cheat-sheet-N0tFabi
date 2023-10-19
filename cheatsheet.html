@@ -55,6 +55,30 @@
                 border-collapse: collapse;<br>
             }<br>
         </p>
+        <p>
+            <h2>Tabellen:</h2>
+            Tabellen werden mit dem &lt;table&gt; - Tag erstellt.<br>
+            Um Reihen / Spalten zu einer Tabelle hinzufügen verwendet man &lt;tr&gt; für Reihen (Horizontal) und
+            darin kann man entweder eine Überschrift - Spalte mit &lt;th&gt; oder eine normale Spalte mit
+            &lt;td&gt; erstellen.<br>
+            Bsp:<br><br>
+            <table>
+                <tr>
+                    <th>Header</th>
+                    <th>Header</th>
+                </tr>
+                <tr>
+                    <td>Element</td>
+                    <td>Element</td>
+                </tr>
+            </table>
+            Um die Linien in der Tabelle verschmelzen zu lassen, bzw. anzeigen lassen, macht man in css folgendes:<br>
+            <code>
+                table {<br>
+                &emsp;border-collapse: collapse;<br>
+                }
+            </code>
+        </p>
     </section>
 
     <h1>CSS</h1>
@@ -79,7 +103,7 @@
         </tr>
         <tr>
             <td>Descendant Selector</td>
-            <td><code>div < p</code></td>
+            <td><code>div</code></td>
             <td>Selects all <code>&lt;p&gt;</code> elements that are descendants of <code>&lt;div&gt;</code>.</td>
         </tr>
         <tr>
