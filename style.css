@@ -138,6 +138,7 @@ table.NavigationBar {
 
 a.WhiteLink {
     color: white;
+    text-decoration: none;
 }
 
 a.WhiteLink:hover {
