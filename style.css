@@ -122,16 +122,24 @@ pre .value {
 }
 
 th.NavigationBar {
-    width: 33%;
+    width: 25%;
     text-align: center;
 }
 
 th.Clicked {
-    width: 33%;
+    width: 25%;
     text-align: center;
     background-color: slategray;
 }
 
 table.NavigationBar {
     width: 100%;
+}
+
+a.WhiteLink {
+    color: white;
+}
+
+a.WhiteLink:hover {
+    color: aquamarine;
 }
