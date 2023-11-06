@@ -79,7 +79,14 @@ h3 {
     background-color: #555;
 }
 
-table {
+div.quizzesHeaders {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+table.selectorTable {
     width: 80%;
     margin: 20px auto;
     border-collapse: collapse;
@@ -143,4 +150,22 @@ a.WhiteLink {
 
 a.WhiteLink:hover {
     color: aquamarine;
+}
+
+div.Url {
+    margin-left: 12%;
+    width: 75%;
+    text-align: center;
+    background-color:#333;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: white;
+}
+
+table.testTable {
+    width: 100%;
+}
+
+#pdfObject {
+    width: 100%;
 }
