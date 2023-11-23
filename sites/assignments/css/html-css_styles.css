@@ -1,0 +1,31 @@
+ul.bulletSquare {
+    list-style-type: square;
+}
+
+ul.bulletImage {
+    list-style-image: url('images/bullet.png');
+}
+
+ul.bulletUpperRoman {
+    list-style: upper-roman;
+}
+
+ul.bulletInsidePosition {
+    list-style-position: inside;
+}
+
+ul.bulletOutsidePosition {
+    list-style-position: outside;
+}
+
+table {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    border-collapse: collapse;
+}
+
+.html-css-container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}

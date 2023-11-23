@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap');
+
+* {
+    font-family: 'Fredoka', sans-serif;
+    color: white;
+}
+
+/* Setting Background */
+body {
+    margin: 0;
+    background: linear-gradient(
+        to left,
+        #23a6d5,
+        #4a148c,
+        #ff0066,
+        #4a148c,
+        #23a6d5
+    );
+    background-size: 400% 400%;
+    animation: gradientTranisition 69.420s linear infinite;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Header Style - Sticking to Top */
+.header {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    padding: 2rem 0;
+    padding-top: 3rem;
+}
+
+.header:not(.noblur) {
+    backdrop-filter: blur(10px);
+}
+
+/* Header Style - Element Hover Effect */
+nav a:hover {
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+/* Nav Style - Styling */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    background: var(--main-color);
+    border: 2px solid var(--border-color);
+    box-shadow: 0px 5px 0px var(--main-color-dark);
+    border-radius: 1rem;
+    border: 1px solid lightgrey;
+    padding: 0.8rem 3rem;
+    transition: all 0.2s;
+    font-weight: bold;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+}
+
+.readingAssignmentsLinks > a {
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+    border: 1px solid lightgray;
+    border-radius: 1rem;
+    padding: 0.8rem 3rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+div.cheatSheetContainer {
+    color: white;
+    display: flex;
+    margin-top: 12rem;
+}
+
+div.innerContainer {
+    color: white;
+    display: flex;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    border: 1px solid lightgrey;
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 20rem;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    transition: all 0.2s;
+    flex-wrap: wrap; 
+    gap: 20px;
+    font-size: 1.25rem;
+}
+
+div.innerContainer:hover {
+    box-shadow: none;
+    transform: translateY(5px);
+    cursor: auto;
+}  
+
+img.logo {
+    float: left;
+    clear: left;
+}
+
+div.code {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    font-family: monospace;
+    font-size: 1rem;
+    text-align: left;
+}
+
+div.inline {
+    display:inline-block;
+    width: 45%;
+    gap: 1rem;
+    text-align: center;
+}
+
+span.cssP {
+    font-family: monospace;
+    font-size: 1rem;
+}
+
+tbody:not(.noborder) tr td:not(.nostyles) {
+    width: 25rem;
+}
+  
+table:not(.noborder) {
+    border-collapse: collapse;
+}
+  
+table:not(.noborder) tbody {
+    border: 2px solid white;
+}
+  
+table:not(.noborder) th,
+table:not(.noborder) td:not(.nostyles) {
+    border: 1px solid white;
+    padding: 8px;
+}
+  
+ .assignmentSection {
+    margin-left: 2rem;
+    margin-right: 2rem;
+ } 
+
+ .readingAssignmentsLinks > a {
+    transition: all 0.2s;
+ }
+
+ .readingAssignmentsLinks > a:hover {
+    box-shadow: none;
+    transform: translateY(5px);
+    cursor: pointer;
+ }
+
+ div.quizzesContainer {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    margin-top: 10rem;
+ }
+
+/*
+    ANIMATIONS
+*/
+
+/* Setting Keyframes for background */
+@keyframes gradientTranisition {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 200% 50%;
+    }
+}

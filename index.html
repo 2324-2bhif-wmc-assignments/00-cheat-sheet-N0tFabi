@@ -1,29 +1,34 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-
-    <!-- Stylesheet (.css-Datei) wird verlinkt -->
-    <link type="text/css" href="style.css" rel="stylesheet">
+    <title>Home</title>
+    <link href="assets/styles/style.css" rel="stylesheet">
 </head>
+
 <body>
-<table class="NavigationBar">
-    <tr>
-        <th class="Clicked">
-            <a href="index.html" class="topLink">Main site</a>
-        </th>
-        <th class="NavigationBar">
-            <a href="cheatsheet.html" class="topLink">Cheat-Sheet</a>
-        </th>
-        <th class="NavigationBar">
-            <a href="www.html" class="topLink">World Wide Web</a>
-        </th>
-        <th class="NavigationBar">
-            <a href="tests.html" class="topLink">Tests</a>
-        </th>
-    </tr>
-</table>
-    <h1 class="main">Welcome to my wonderful website</h1>
+    <nav class="header">
+        <a href="sites/cheatsheet.html">Cheat Sheet</a>
+        <a href="sites/readingAssignments.html">Reading Assignments</a>
+        <a href="sites/quizzes.html">Quizzes / Tests</a>
+    </nav>
+
+    <div class="container">
+        <div class="innerContainer">
+            <img src="assets/images/html.png" height="250rem" class="logo"><br>
+            HTML ist eine textbasierte Programmiersprache mit der den Inhalt von Webseiten definieren kann.
+        </div>
+        <div class="innerContainer">
+            <img src="assets/images/css.png" height="250rem" class="logo">
+            CSS beschreibt, wie Elemente aussehen und kann ihre Eigenschaften bei bestimmten Events ändern (Subklassen, zB Maus über element, hover)
+        </div>
+        <div class="innerContainer">
+            <img src="assets/images/js.png" height="250rem" class="logo">
+            JavaScript macht Webseiten dynamisch, das heißt es wird zB bei einem Knopfdruck ein bestimmter Code ausgeführt.
+        </div>
+    </div>
+
 </body>
+
 </html>
