@@ -178,8 +178,12 @@ table:not(.noborder) td:not(.nostyles) {
  div.quizzesContainer {
     width: 100%;
     justify-content: center;
-    display: flex;
     margin-top: 10rem;
+    display: flex;
+ }
+
+ div.outerQuizzesContainer {
+    width: 100%;
  }
 
 /*
