@@ -2,212 +2,173 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>CheatSheet</title>
-    <link href="../assets/styles/style.css" rel="stylesheet">
+    <link href="../assets/styles/style.css" rel="stylesheet" />
 </head>
 
 <body>
     <nav class="header">
-        <a href="cheatsheet.html">Cheat Sheet</a>
+        <a href="cheatsheet.html" id="cheatSheetClicked">Cheat Sheet</a>
         <a href="readingAssignments.html">Reading Assignments</a>
+        <a href="tutorials.html">Tutorials</a>
         <a href="quizzes.html">Quizzes / Tests</a>
     </nav>
-
+    <div class="tableOfContents"></div>
     <div class="cheatSheetContainer">
         <div>
             <div>
                 <h1>Html - Head Element</h1>
-    
                 <h2>Title</h2>
-                The Title is defined by the <code>&lt;title&gt;</code> tag. It is displayed in the browser tab.
-                <br>Example:
+                The Title is defined by the <code>&lt;title&gt;</code> tag. It is displayed in the browser tab.<br />
+                Example:
                 <div class="code">
                     &lt;title&gt;My Website&lt;/title&gt;
                 </div>
-    
                 <h2>MetaTags</h2>
-                Metadatas are informations about the HTML Document.
-                <br>Examples:
+                Metadatas are informations about the HTML Document.<br />
+                Examples:
                 <div class="code">
-                    &lt;meta charset="UTF-8"&gt;
-                    <br>&lt;meta name="description" content="My Website's Description"&gt;
-                    <br>&lt;meta name="author" content="Author's name"&gt;
+                    &lt;meta charset="UTF-8"&gt;<br />
+                    &lt;meta name="description" content="My Website's Description"&gt;<br />
+                    &lt;meta name="author" content="Author's name"&gt;
                 </div>
-    
                 <h2>Links and Scripts</h2>
-                Links and Scripts are references to styles or scripts or other assets required for the webpages's functionality.
-                <br>Example:
+                Links and Scripts are references to styles or scripts or other assets required for the webpages's functionality.<br />
+                Example:
                 <div class="code">
-                    &lt;link rel="stylesheet" href="styles.css"&gt;
-                    <br>&lt;script src="script.js"&gt;&lt;/script&gt;
+                    &lt;link rel="stylesheet" href="styles.css"&gt;<br />
+                    &lt;script src="script.js"&gt;&lt;/script&gt;
                 </div>
             </div>
-
             <div>
                 <h1>Html - Body Element</h1>
-    
                 <h2>Headings</h2>
-                Headings are used to structure the content of a webpage. There are 6 different headings, <code>&lt;h1&gt;</code> being the most important and <code>&lt;h6&gt;</code> being the least important.
-                <br>Example:
+                Headings are used to structure the content of a webpage. There are 6 different headings, <code>&lt;h1&gt;</code> being the most important and <code>&lt;h6&gt;</code> being the least important.<br />
+                Example:
                 <div class="code">
-                    &lt;h1&gt;Heading 1&lt;/h1&gt;
-                    <br>&lt;h2&gt;Heading 2&lt;/h2&gt;
-                    <br>&lt;h3&gt;Heading 3&lt;/h3&gt;
-                    <br>&lt;h4&gt;Heading 4&lt;/h4&gt;
-                    <br>&lt;h5&gt;Heading 5&lt;/h5&gt;
-                    <br>&lt;h6&gt;Heading 6&lt;/h6&gt;
+                    &lt;h1&gt;Heading 1&lt;/h1&gt;<br />
+                    &lt;h2&gt;Heading 2&lt;/h2&gt;<br />
+                    &lt;h3&gt;Heading 3&lt;/h3&gt;<br />
+                    &lt;h4&gt;Heading 4&lt;/h4&gt;<br />
+                    &lt;h5&gt;Heading 5&lt;/h5&gt;<br />
+                    &lt;h6&gt;Heading 6&lt;/h6&gt;
                 </div>
-
                 <h2>Paragraphs (&lt;p&gt;)</h2>
-                <p>
-                    Paragraphs are used to display text in a block format.
-                    They are commonly used for structuring content and separating text.
-                </p>
+                <p>Paragraphs are used to display text in a block format. They are commonly used for structuring content and separating text.</p>
                 <h3>Example:</h3>
                 <div class="code">
                     &lt;p&gt;This is a paragraph.&lt;/p&gt;
                 </div>
-
                 <h2>Links (&lt;a&gt;)</h2>
-                <p>
-                    Links are used to connect to other webpages or resources.
-                    They are fundamental for navigation and connecting content across the web.
-                </p>
+                <p>Links are used to connect to other webpages or resources. They are fundamental for navigation and connecting content across the web.</p>
                 <h3>Example:</h3>
                 <div class="code">
                     &lt;a href="https://www.google.com"&gt;Go to Google&lt;/a&gt;
                 </div>
-
                 <h2>Headings (&lt;h1&gt; to &lt;h6&gt;)</h2>
-                <p>
-                    Headings are used to define titles or subtitles for sections of content.
-                    They vary in size from h1 (largest) to h6 (smallest).
-                </p>
+                <p>Headings are used to define titles or subtitles for sections of content. They vary in size from h1 (largest) to h6 (smallest).</p>
                 <h3>Example:</h3>
                 <div class="code">
-                    &lt;h1&gt;Main Heading&lt;/h1&gt;
-                    <br>&lt;h2&gt;Subheading&lt;/h2&gt;
-                    <br>&lt;h3&gt;Another Subheading&lt;/h3&gt;
+                    &lt;h1&gt;Main Heading&lt;/h1&gt;<br />
+                    &lt;h2&gt;Subheading&lt;/h2&gt;<br />
+                    &lt;h3&gt;Another Subheading&lt;/h3&gt;
                 </div>
-
                 <h2>Images (&lt;img&gt;)</h2>
-                <p>
-                    Images are used to display visual content on a webpage.
-                    They can be photos, illustrations, icons, etc., and are specified using the src attribute.
-                </p>
+                <p>Images are used to display visual content on a webpage. They can be photos, illustrations, icons, etc., and are specified using the src attribute.</p>
                 <h3>Example:</h3>
                 <div class="code">
                     &lt;img src="image.jpg" alt="Description of the image"&gt;
                 </div>
-
-                <h2>Lists (Ordered &amp; Unordered)</h2>
-                <p>
-                    Lists are used to organize content in a structured manner.
-                    They can be ordered (&lt;ol&gt;) or unordered (&lt;ul&gt;), containing list items (&lt;li&gt;).
-                </p>
+                <h2>Lists (Ordered & Unordered)</h2>
+                <p>Lists are used to organize content in a structured manner. They can be ordered (&lt;ol&gt;) or unordered (&lt;ul&gt;), containing list items (&lt;li&gt;).</p>
                 <h3>Example:</h3>
                 <div class="code">
-                    &lt;ul&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Item 1&lt;/li&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Item 2&lt;/li&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Item 3&lt;/li&gt;<br>
-                    &lt;/ul&gt;<br>
-                    &lt;ol&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;First Item&lt;/li&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Second Item&lt;/li&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Third Item&lt;/li&gt;<br>
-                    &lt;/ol&gt;<br>
+                    &lt;ul&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Item 1&lt;/li&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Item 2&lt;/li&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Item 3&lt;/li&gt;<br />
+                    &lt;/ul&gt;<br />
+                    &lt;ol&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;First Item&lt;/li&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Second Item&lt;/li&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Third Item&lt;/li&gt;<br />
+                    &lt;/ol&gt;<br />
                 </div>
-
                 <h2>Tables (&lt;table&gt;)</h2>
-                <p>
-                    Tables are used to display data in rows and columns.
-                    They consist of a combination of &lt;table&gt;, &lt;tr&gt; (table row), &lt;td&gt; (table data), and &lt;th&gt; (table header) elements.
-                </p>
+                <p>Tables are used to display data in rows and columns. They consist of a combination of &lt;table&gt;, &lt;tr&gt; (table row), &lt;td&gt; (table data), and &lt;th&gt; (table header) elements.</p>
                 <h3>Example:</h3>
                 <div class="code">
-                    &lt;table&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Header 1&lt;/th&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Header 2&lt;/th&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Data 1&lt;/td&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Data 2&lt;/td&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+                    &lt;table&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Header 1&lt;/th&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Header 2&lt;/th&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Data 1&lt;/td&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Data 2&lt;/td&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br />
                     &lt;/table&gt;
                 </div>
-
                 <h2>Divs</h2>
-                <p>
-                    Divs are used to group elements together in a container. 
-                    They are used to apply styles to a group of elements.
-                </p>
+                <p>Divs are used to group elements together in a container. They are used to apply styles to a group of elements.</p>
                 <h3>Example:</h3>
                 <div class="code">
-                    &lt;div&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Paragraph 1&lt;/p&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Paragraph 2&lt;/p&gt;<br>
+                    &lt;div&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Paragraph 1&lt;/p&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Paragraph 2&lt;/p&gt;<br />
                     &lt;/div&gt;
                 </div>
             </div>
-
             <div>
-                <br><h1>CSS</h1><br>
+                <br />
+                <h1>CSS</h1>
+                <br />
                 <h2>Selectors</h2>
                 <h3>Syntax</h3>
                 <div class="code">
-                    selector {<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;property: value;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;property2: value2;<br>
+                    selector {<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;property: value;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;property2: value2;<br />
                     }
                 </div>
-
                 <h3>Include external css file</h3>
                 <div class="code">
                     &lt;link rel="stylesheet" type="text/css" href="/style.css" /&gt;
                 </div>
-
                 <h3>Internal styles</h3>
                 <div class="code">
-                    &lt;style type="text/css"&gt;
-                        div { <br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;color: #444; <br>
-                        }
-                    &lt;/style&gt;
+                    &lt;style type="text/css"&gt; div {<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;color: #444;<br />
+                    } &lt;/style&gt;
                 </div>
-
                 <h3>Inline styles</h3>
                 <div class="code">
                     &lt;tag style="property: value"&gt; &lt;/tag&gt;
                 </div>
-
                 <h3>Clearfix</h3>
                 <div class="code">
-                    .clearfix:after {<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;clear: both;<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;content: " ";<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;display: block;<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;font-size: 0;<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;height: 0;<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;visibility: hidden;<br>
-                    }<br>
-                    .clearfix { <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;display: inline-block; <br>
-                    }<br>
-                    * html .clearfix { <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;height: 1%; <br>
-                    }<br>
-                    .clearfix { <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;display: block; <br>
+                    .clearfix:after {<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;clear: both;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;content: " ";<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;display: block;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;font-size: 0;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;height: 0;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;visibility: hidden;<br />
+                    }<br />
+                    .clearfix {<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;display: inline-block;<br />
+                    }<br />
+                    * html .clearfix {<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;height: 1%;<br />
+                    }<br />
+                    .clearfix {<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;display: block;<br />
                     }
                 </div>
-
                 <h3>Box model</h3>
-                <img src="../assets/images/boxmodel.png" alt="Box model" width="400rem">
-                <br><br>
-
+                <img src="../assets/images/boxmodel.png" alt="Box model" width="400rem" /><br />
+                <br />
                 <article class="article-content">
                     <h2 id="css-cheat-sheet"><strong>CSS Cheat sheet&nbsp;</strong></h2>
                     <h3 id="toc-1-font"><strong>1. Font</strong></h3>
@@ -325,7 +286,10 @@
                                 </tr>
                                 <tr>
                                     <td>appearance – apply platform specific styling</td>
-                                    <td>normal | inherit | [icon | window | desktop | work-space | document | tooltip | dialog | button | push-button | hyperlink | radio-button | checkbox | menu-item | tab | menu | menubar | pull-down-menu | pop-up-menu | list-menu | radio-group | checkbox-group | outline-tree | range | field | combo-box | signature | password]</td>
+                                    <td>
+                                        normal | inherit | [icon | window | desktop | work-space | document | tooltip | dialog | button | push-button | hyperlink | radio-button | checkbox | menu-item | tab | menu | menubar |
+                                        pull-down-menu | pop-up-menu | list-menu | radio-group | checkbox-group | outline-tree | range | field | combo-box | signature | password]
+                                    </td>
                                     <td>appearance: password;</td>
                                 </tr>
                                 <tr>
@@ -340,7 +304,10 @@
                                 </tr>
                                 <tr>
                                     <td>nav-up</td>
-                                    <td>auto | inherit &lt;id&gt; [current | root | &lt;target-name&gt; auto (browser decides where to navigate to)/ id (specific ID to be navigated to)/ target_name (target frame to navigate to)/inherit (value computed based on element’s parent; root or current)</td>
+                                    <td>
+                                        auto | inherit &lt;id&gt; [current | root | &lt;target-name&gt; auto (browser decides where to navigate to)/ id (specific ID to be navigated to)/ target_name (target frame to navigate to)/inherit
+                                        (value computed based on element’s parent; root or current)
+                                    </td>
                                     <td>nav-up: auto;</td>
                                 </tr>
                                 <tr>
@@ -485,7 +452,7 @@
                             </tbody>
                         </table>
                     </div>
-                    <h3 id="toc-6-box-model"><strong>6. Box Model </strong>&nbsp;</h3>
+                    <h3 id="toc-6-box-model"><strong>6. Box Model</strong> &nbsp;</h3>
                     <div style="overflow-x:auto;">
                         <table>
                             <tbody>
@@ -590,7 +557,9 @@
                                 </tr>
                                 <tr>
                                     <td>display</td>
-                                    <td>none/inline/block/inline-block/list-item/run-in/compact/table/inline-table/table-row-group/table-headergroup/table-footer-group/table-row/table-column-group/table-column/table-cell/table-caption/ruby/ruby-base/ruby-text/ruby-base-group/ruby-text-group</td>
+                                    <td>
+                                        none/inline/block/inline-block/list-item/run-in/compact/table/inline-table/table-row-group/table-headergroup/table-footer-group/table-row/table-column-group/table-column/table-cell/table-caption/ruby/ruby-base/ruby-text/ruby-base-group/ruby-text-group
+                                    </td>
                                     <td>display : inline</td>
                                 </tr>
                                 <tr>
@@ -851,7 +820,9 @@
                                 <tr>
                                     <td>list-style-type</td>
                                     <td>
-                                        <p>none/asterisks/box/check/circle/diamond/disc/hyphen/square/decimal/decimal-leading-zero/lower-roman/upper-roman/lower-alpha/upper-alpha/lower-greek/lower-latin/upper-latin/hebrew/armenian/georgian/cjk-ideographic/hiragana/katakana/hiragana-iroha/katakana-iroha/footnotes</p>
+                                        <p>
+                                            none/asterisks/box/check/circle/diamond/disc/hyphen/square/decimal/decimal-leading-zero/lower-roman/upper-roman/lower-alpha/upper-alpha/lower-greek/lower-latin/upper-latin/hebrew/armenian/georgian/cjk-ideographic/hiragana/katakana/hiragana-iroha/katakana-iroha/footnotes
+                                        </p>
                                         <p>Example:</p>
                                         <p>{ list-style-type : upper-roman}</p>
                                     </td>
@@ -1146,7 +1117,11 @@
                                 </tr>
                                 <tr>
                                     <td>transform</td>
-                                    <td>none/matrix/matrix3d/translate3d/tranlateX/translateY/translateZ/scale/<br>scale3d/scaleX/scaleY/scaleZ/rotate/rotate3d/rotateX/rotateY/rotateZ/<br>skewX/skewY/skew/perspective</td>
+                                    <td>
+                                        none/matrix/matrix3d/translate3d/tranlateX/translateY/translateZ/scale/<br />
+                                        scale3d/scaleX/scaleY/scaleZ/rotate/rotate3d/rotateX/rotateY/rotateZ/<br />
+                                        skewX/skewY/skew/perspective
+                                    </td>
                                     <td>transform: skewy(40deg); transform: scalex(10); transform: rotate(50deg);</td>
                                 </tr>
                                 <tr>
@@ -1208,7 +1183,7 @@
                                 </tr>
                                 <tr>
                                     <td>voice-pitch</td>
-                                    <td>&lt;frequency&gt; &amp;&amp; absolute | [[x-low | low | medium | high | x-high] || [&lt;frequency&gt; | &lt;semitones&gt; | &lt;percentage&gt;]]</td>
+                                    <td>&lt;frequency&gt; &amp;& absolute | [[x-low | low | medium | high | x-high] || [&lt;frequency&gt; | &lt;semitones&gt; | &lt;percentage&gt;]]</td>
                                     <td>voice-pitch: high; voice-pitch: 350hz; voice-pitch: 45%</td>
                                 </tr>
                                 <tr>
@@ -1778,280 +1753,1011 @@
                                 </tr>
                             </tbody>
                         </table>
+                    </div>
+                    <h3 id="toc-29-Gradients"><strong>29. Gradients</strong></h3>
+                    <div style="overflow-x:auto;">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>linear-gradient</td>
+                                    <td>linear-gradient([ [ [ to ] &lt;side-or-corner&gt; ] | [ &lt;angle&gt; | [ left | right ] &lt;angle&gt; ] ] , &lt;color-stop&gt; [, &lt;color-stop&gt;]+)</td>
+                                    <td>linear-gradient(45deg, red, yellow)</td>
+                                </tr>
+                                <tr>
+                                    <td>radial-gradient</td>
+                                    <td>radial-gradient([ [ circle | ellipse ] [ at &lt;position&gt; ]? ,]? &lt;color-stop&gt; [, &lt;color-stop&gt;]+)</td>
+                                    <td>radial-gradient(circle at 50% 50%, red, yellow)</td>
+                                </tr>
+                                <tr>
+                                    <td>repeating-linear-gradient</td>
+                                    <td>repeating-linear-gradient([ [ [ to ] &lt;side-or-corner&gt; ] | [ &lt;angle&gt; | [ left | right ] &lt;angle&gt; ] ] , &lt;color-stop&gt; [, &lt;color-stop&gt;]+)</td>
+                                    <td>repeating-linear-gradient(45deg, red, yellow)</td>
+                                </tr>
+                                <tr>
+                                    <td>repeating-radial-gradient</td>
+                                    <td>repeating-radial-gradient([ [ circle | ellipse ] [ at &lt;position&gt; ]? ,]? &lt;color-stop&gt; [, &lt;color-stop&gt;]+)</td>
+                                    <td>repeating-radial-gradient(circle at 50% 50%, red, yellow)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                     <p>&nbsp;</p>
                     <div class="text-center">
                         <!-- /22535388737/Hackr.io/Blog_Blog_Middle-->
                         <div id="unit-1627658840059" class="tmsads"></div>
                     </div>
                     <div id="gtx-trans" style="position: absolute; left: 74px; top: 17481.4px;">
-                        <div class="gtx-trans-icon">&nbsp;</div>
+                        <div class="gtx-trans-icon">
+                            &nbsp;
+                        </div>
                     </div>
                     <div id="gtx-trans" style="position: absolute; left: 74px; top: 17481.4px;">
-                        <div class="gtx-trans-icon">&nbsp;</div>
+                        <div class="gtx-trans-icon">
+                            &nbsp;
+                        </div>
                     </div>
                 </article>
-
                 <table class="noborder">
                     <tr>
                         <td valign="top" class="nostyles" width="700rem">
                             <h3>Attributes</h3>
                             <div class="descriptionListing">
                                 <table>
-                                    <tr><td><span class="cssP">align-content</span></td><td><em>behavior of the flex-wrap property </em></td></tr>
-                                    <tr><td><span class="cssP">align-items</span></td><td><em>alignment for items inside the container </em></td></tr>
-                                    <tr><td><span class="cssP">align-self</span></td><td><em>alignment for the selected item </em></td></tr>
-                                    <tr><td><span class="cssP">all</span></td><td><em>changes all properties </em></td></tr>
-                                    <tr><td><span class="cssP">animation</span></td><td><em>binds an animation to an element </em></td></tr>
-                                    <tr><td><span class="cssP">animation-delay</span></td><td><em>delays animation start </em></td></tr>
-                                    <tr><td><span class="cssP">animation-direction</span></td><td><em>reverse animation or in alternate cycles </em></td></tr>
-                                    <tr><td><span class="cssP">animation-duration</span></td><td><em>animation duration in seconds or ms </em></td></tr>
-                                    <tr><td><span class="cssP">animation-fill-mode</span></td><td><em>style when the animation is not playing  </em></td></tr>
-                                    <tr><td><span class="cssP">animation-iteration-count</span></td><td><em>number of an animation replays </em></td></tr>
-                                    <tr><td><span class="cssP">animation-name</span></td><td><em>name for the @keyframes animation </em></td></tr>
-                                    <tr><td><span class="cssP">animation-play-state</span></td><td><em>the animation is running or paused </em></td></tr>
-                                    <tr><td><span class="cssP">animation-timing-function</span></td><td><em>speed curve of an animation </em></td></tr>
-                                    <tr><td><span class="cssP">backface-visibility</span></td><td><em>is element visible when not facing the screen </em></td></tr>
-                                    <tr><td><span class="cssP">background</span></td><td><em>all background properties in one declaration </em></td></tr>
-                                    <tr><td><span class="cssP">background-attachment</span></td><td><em>is the background image fixed or scrolls</em></td></tr>
-                                    <tr><td><span class="cssP">background-blend-mode</span></td><td><em>blending mode of each background layer </em></td></tr>
-                                    <tr><td><span class="cssP">background-clip</span></td><td><em>painting area of the background </em></td></tr>
-                                    <tr><td><span class="cssP">background-color</span></td><td><em>background color </em></td></tr>
-                                    <tr><td><span class="cssP">background-image</span></td><td><em>background image </em></td></tr>
-                                    <tr><td><span class="cssP">background-origin</span></td><td><em>where the background image is positioned </em></td></tr>
-                                    <tr><td><span class="cssP">background-position</span></td><td><em>starting position of the background image </em></td></tr>
-                                    <tr><td><span class="cssP">background-repeat</span></td><td><em>the way the background image is repeated </em></td></tr>
-                                    <tr><td><span class="cssP">background-size</span></td><td><em>background image size </em></td></tr>
-                                    <tr><td><span class="cssP">border</span></td><td><em>sets all border properties in one line </em></td></tr>
-                                    <tr><td><span class="cssP">border-bottom</span></td><td><em>bottom border properties in one line </em></td></tr>
-                                    <tr><td><span class="cssP">border-bottom-color</span></td><td><em>color of the bottom border</em></td></tr>
-                                    <tr><td><span class="cssP">border-bottom-left-radius</span></td><td><em>border bottom left radius </em></td></tr>
-                                    <tr><td><span class="cssP">border-bottom-right-radius</span></td><td><em>border bottom right radius </em></td></tr>
-                                    <tr><td><span class="cssP">border-bottom-style</span></td><td><em>border bottom style </em></td></tr>
-                                    <tr><td><span class="cssP">border-bottom-width</span></td><td><em>border bottom width</em></td></tr>
-                                    <tr><td><span class="cssP">border-collapse</span></td><td><em>border collapse</em></td></tr>
-                                    <tr><td><span class="cssP">border-color</span></td><td><em>border color </em></td></tr>
-                                    <tr><td><span class="cssP">border-image</span></td><td><em>sets an image as border</em></td></tr>
-                                    <tr><td><span class="cssP">border-image-outset</span></td><td><em>border image area extends beyond the border box </em></td></tr>
-                                    <tr><td><span class="cssP">border-image-repeat</span></td><td><em>border image repeated, rounded or stretched</em></td></tr>
-                                    <tr><td><span class="cssP">border-image-slice</span></td><td><em>how to slice the border image </em></td></tr>
-                                    <tr><td><span class="cssP">border-image-source</span></td><td><em>path to the border image </em></td></tr>
-                                    <tr><td><span class="cssP">border-image-width</span></td><td><em>border image width </em></td></tr>
-                                    <tr><td><span class="cssP">border-left</span></td><td><em>left border properties in one line </em></td></tr>
-                                    <tr><td><span class="cssP">border-left-color</span></td><td><em>border left color </em></td></tr>
-                                    <tr><td><span class="cssP">border-left-style</span></td><td><em>border left style </em></td></tr>
-                                    <tr><td><span class="cssP">border-left-width</span></td><td><em>border left width </em></td></tr>
-                                    <tr><td><span class="cssP">border-radius</span></td><td><em>border radius of the four rounded corners</em></td></tr>
-                                    <tr><td><span class="cssP">border-right</span></td><td><em>right border properties in one line </em></td></tr>
-                                    <tr><td><span class="cssP">border-right-color</span></td><td><em>border right color </em></td></tr>
-                                    <tr><td><span class="cssP">border-right-style</span></td><td><em>border right style </em></td></tr>
-                                    <tr><td><span class="cssP">border-right-width</span></td><td><em>border right width </em></td></tr>
-                                    <tr><td><span class="cssP">border-spacing</span></td><td><em>border spacing </em></td></tr>
-                                    <tr><td><span class="cssP">border-style</span></td><td><em>border style </em></td></tr>
-                                    <tr><td><span class="cssP">border-top</span></td><td><em>top border properties in one line </em></td></tr>
-                                    <tr><td><span class="cssP">border-top-color</span></td><td><em>border top color </em></td></tr>
-                                    <tr><td><span class="cssP">border-top-left-radius</span></td><td><em>border top left radius </em></td></tr>
-                                    <tr><td><span class="cssP">border-top-right-radius</span></td><td><em>border top right radius </em></td></tr>
-                                    <tr><td><span class="cssP">border-top-style</span></td><td><em>border top style </em></td></tr>
-                                    <tr><td><span class="cssP">border-top-width</span></td><td><em>border top width </em></td></tr>
-                                    <tr><td><span class="cssP">border-width</span></td><td><em>border width </em></td></tr>
-                                    <tr><td><span class="cssP">bottom</span></td><td><em>bottom offset for relative and absolute elements </em></td></tr>
-                                    <tr><td><span class="cssP">box-shadow</span></td><td><em>shadow to element </em></td></tr>
-                                    <tr><td><span class="cssP">box-sizing</span></td><td><em>box sizing properties</em></td></tr>
-                                    <tr><td><span class="cssP">caption-side</span></td><td><em>placement of a table caption </em></td></tr>
-                                    <tr><td><span class="cssP">clear</span></td><td><em>deny floating of an element </em></td></tr>
-                                    <tr><td><span class="cssP">clip</span></td><td><em>clip an absolutely positioned element </em></td></tr>
-                                    <tr><td><span class="cssP">color</span></td><td><em>text color</em></td></tr>
-                                    <tr><td><span class="cssP">column-count</span></td><td><em>divide the content in columns</em></td></tr>
-                                    <tr><td><span class="cssP">column-fill</span></td><td><em>balanced fill or not </em></td></tr>
-                                    <tr><td><span class="cssP">column-gap</span></td><td><em>gap between the columns </em></td></tr>
-                                    <tr><td><span class="cssP">column-rule</span></td><td><em>separator between columns, like border </em></td></tr>
-                                    <tr><td><span class="cssP">column-rule-color</span></td><td><em>column rule color </em></td></tr>
-                                    <tr><td><span class="cssP">column-rule-style</span></td><td><em>column rule style </em></td></tr>
-                                    <tr><td><span class="cssP">column-rule-width</span></td><td><em>column rule width </em></td></tr>
-                                    <tr><td><span class="cssP">column-span</span></td><td><em> column span</em></td></tr>
-                                    <tr><td><span class="cssP">column-width</span></td><td><em>column width </em></td></tr>
-                                    <tr><td><span class="cssP">columns</span></td><td><em>set column-width and column-count </em></td></tr>
-                                    <tr><td><span class="cssP">content</span></td><td><em>insert content :before and :after elements </em></td></tr>
-                                    <tr><td><span class="cssP">counter-increment</span></td><td><em>count sections </em></td></tr>
-                                    <tr><td><span class="cssP">counter-reset</span></td><td><em>reset counter </em></td></tr>
-                                    <tr><td><span class="cssP">cursor</span></td><td><em>cursor type when element is hovered </em></td></tr>
-                                    <tr><td><span class="cssP">direction</span></td><td><em>writing direction, Arabic is using rtl </em></td></tr>
-                                    <tr><td><span class="cssP">display</span></td><td><em>box display type </em></td></tr>
-                                    <tr><td><span class="cssP">empty-cells</span></td><td><em>hide borders and background on empty table cells </em></td></tr>
-                                    <tr><td><span class="cssP">filter</span></td><td><em>image effects: grayscale, blur, invert etc. </em></td></tr>
-                                    <tr><td><span class="cssP">flex</span></td><td><em>item length, relative to others inside the container </em></td></tr>
-                                    <tr><td><span class="cssP">flex-basis</span></td><td><em>initial length of a flexible item </em></td></tr>
-                                    <tr><td><span class="cssP">flex-direction</span></td><td><em>direction of the flexible items </em></td></tr>
-                                    <tr><td><span class="cssP">flex-flow</span></td><td><em>shorthand for flex-direction and flex-wrap  </em></td></tr>
-                                    <tr><td><span class="cssP">flex-grow</span></td><td><em>how much the item will grow relative other items </em></td></tr>
-                                    <tr><td><span class="cssP">flex-shrink</span></td><td><em>how to shrink the item relative to other items </em></td></tr>
-                                    <tr><td><span class="cssP">flex-wrap</span></td><td><em>wrap flexible items </em></td></tr>
-                                    <tr><td><span class="cssP">float</span></td><td><em>float elements left or right </em></td></tr>
-                                    <tr><td><span class="cssP">font</span></td><td><em>all font properties in one line </em></td></tr>
-                                    <tr><td><span class="cssP">@font-face</span></td><td><em>declare non-web-safe fonts</em></td></tr>
-                                    <tr><td><span class="cssP">font-family</span></td><td><em>font of the element </em></td></tr>
-                                    <tr><td><span class="cssP">font-size</span></td><td><em>font size </em></td></tr>
-                                    <tr><td><span class="cssP">font-size-adjust</span></td><td><em>control font size if the first declared option is not available </em></td></tr>
-                                    <tr><td><span class="cssP">font-stretch</span></td><td><em>widen or narrow text </em></td></tr>
-                                    <tr><td><span class="cssP">font-style</span></td><td><em>font style: normal, italic, oblique </em></td></tr>
-                                    <tr><td><span class="cssP">font-variant</span></td><td><em>set small-caps </em></td></tr>
-                                    <tr><td><span class="cssP">font-weight</span></td><td><em>use bold or thin characters </em></td></tr>
-                                    <tr><td><span class="cssP">hanging-punctuation</span></td><td><em>can a punctuation mark be placed outside the line box?  </em></td></tr>
-                                    <tr><td><span class="cssP">height</span></td><td><em>height of the element </em></td></tr>
-                                    <tr><td><span class="cssP">justify-content</span></td><td><em>justifies flexible container's items horizontally if necessary  </em></td></tr>
-                                    <tr><td><span class="cssP">@keyframes</span></td><td><em>specifies the animation code </em></td></tr>
-                                    <tr><td><span class="cssP">left</span></td><td><em>left offset for relative and absolute elements </em></td></tr>
-                                    <tr><td><span class="cssP">letter-spacing</span></td><td><em>space between characters  </em></td></tr>
-                                    <tr><td><span class="cssP">line-height</span></td><td><em>line height of text or inline-block elements</em></td></tr>
-                                    <tr><td><span class="cssP">list-style</span></td><td><em>all list properties in one line </em></td></tr>
-                                    <tr><td><span class="cssP">list-style-image</span></td><td><em>replace the list item marker with an image </em></td></tr>
-                                    <tr><td><span class="cssP">list-style-position</span></td><td><em>list item markers inside or outside the content flow </em></td></tr>
-                                    <tr><td><span class="cssP">list-style-type</span></td><td><em>set the type of the list item marker </em></td></tr>
-                                    <tr><td><span class="cssP">margin</span></td><td><em>set the top, right, bottom and left margins in one line </em></td></tr>
-                                    <tr><td><span class="cssP">margin-bottom</span></td><td><em>bottom margin </em></td></tr>
-                                    <tr><td><span class="cssP">margin-left</span></td><td><em>left margin </em></td></tr>
-                                    <tr><td><span class="cssP">margin-right</span></td><td><em>right margin </em></td></tr>
-                                    <tr><td><span class="cssP">margin-top</span></td><td><em>margin top </em></td></tr>
-                                    <tr><td><span class="cssP">max-height</span></td><td><em>maximum height of element </em></td></tr>
-                                    <tr><td><span class="cssP">max-width</span></td><td><em>maximum width of element </em></td></tr>
-                                    <tr><td><span class="cssP">@media</span></td><td><em>see media queries </em></td></tr>
-                                    <tr><td><span class="cssP">min-height</span></td><td><em>minimum height </em></td></tr>
-                                    <tr><td><span class="cssP">min-width</span></td><td><em>minimum width </em></td></tr>
-                                    <tr><td><span class="cssP">nav-down</span></td><td><em>where to navigate when the the arrow-down button is pressed </em></td></tr>
-                                    <tr><td><span class="cssP">nav-index</span></td><td><em>sets sequential navigation order  </em></td></tr>
-                                    <tr><td><span class="cssP">nav-left</span></td><td><em>where to navigate when the the arrow-left button is pressed </em></td></tr>
-                                    <tr><td><span class="cssP">nav-right</span></td><td><em>where to navigate when the the arrow-right button is pressed </em></td></tr>
-                                    <tr><td><span class="cssP">nav-up</span></td><td><em>where to navigate when the the arrow-up button is pressed </em></td></tr>
-                                    <tr><td><span class="cssP">opacity</span></td><td><em>transparency level of an element </em></td></tr>
-                                    <tr><td><span class="cssP">order</span></td><td><em>reorder elements in a container </em></td></tr>
-                                    <tr><td><span class="cssP">outline</span></td><td><em>drow an outer border around elements </em></td></tr>
-                                    <tr><td><span class="cssP">outline-color</span></td><td><em>outline color </em></td></tr>
-                                    <tr><td><span class="cssP">outline-offset</span></td><td><em>gap between the element and the outline </em></td></tr>
-                                    <tr><td><span class="cssP">outline-style</span></td><td><em>outline style </em></td></tr>
-                                    <tr><td><span class="cssP">outline-width</span></td><td><em>outline width </em></td></tr>
-                                    <tr><td><span class="cssP">overflow</span></td><td><em>hide, display or scroll if the content overflows its container  </em></td></tr>
-                                    <tr><td><span class="cssP">overflow-x</span></td><td><em>horizontal overflow </em></td></tr>
-                                    <tr><td><span class="cssP">overflow-y</span></td><td><em>vertical overflow </em></td></tr>
-                                    <tr><td><span class="cssP">padding</span></td><td><em>padding between the element border and content</em></td></tr>
-                                    <tr><td><span class="cssP">padding-bottom</span></td><td><em>padding bottom </em></td></tr>
-                                    <tr><td><span class="cssP">padding-left</span></td><td><em>padding left </em></td></tr>
-                                    <tr><td><span class="cssP">padding-right</span></td><td><em>padding right </em></td></tr>
-                                    <tr><td><span class="cssP">padding-top</span></td><td><em>padding top </em></td></tr>
-                                    <tr><td><span class="cssP">page-break-after</span></td><td><em>adds page break after an element </em></td></tr>
-                                    <tr><td><span class="cssP">page-break-before</span></td><td><em>adds page break before an element </em></td></tr>
-                                    <tr><td><span class="cssP">page-break-inside</span></td><td><em>allow page break inside an element </em></td></tr>
-                                    <tr><td><span class="cssP">perspective</span></td><td><em>how many pixels the 3D element is placed from the view </em></td></tr>
-                                    <tr><td><span class="cssP">perspective-origin</span></td><td><em>where is the 3D element based in the x- and y-axis </em></td></tr>
-                                    <tr><td><span class="cssP">position</span></td><td><em>positioning type: absolute, fixed, relative, static</em></td></tr>
-                                    <tr><td><span class="cssP">quotes</span></td><td><em>set quotation marks to wrap an element </em></td></tr>
-                                    <tr><td><span class="cssP">resize</span></td><td><em>declare resizable elements </em></td></tr>
-                                    <tr><td><span class="cssP">right</span></td><td><em>right offset for relative and absolute elements </em></td></tr>
-                                    <tr><td><span class="cssP">tab-size</span></td><td><em>tab character space length </em></td></tr>
-                                    <tr><td><span class="cssP">table-layout</span></td><td><em>table layout algorithm </em></td></tr>
-                                    <tr><td><span class="cssP">text-align</span></td><td><em>horizontal alignment of text </em></td></tr>
-                                    <tr><td><span class="cssP">text-align-last</span></td><td><em>horizontal alignment of last line of text </em></td></tr>
-                                    <tr><td><span class="cssP">text-decoration</span></td><td><em>overline, underline or line-through the text </em></td></tr>
-                                    <tr><td><span class="cssP">text-indent</span></td><td><em>indentation of the first line of the text </em></td></tr>
-                                    <tr><td><span class="cssP">text-overflow</span></td><td><em>the way how overflowed content is marked (ellipsis) </em></td></tr>
-                                    <tr><td><span class="cssP">text-shadow</span></td><td><em>text shadow </em></td></tr>
-                                    <tr><td><span class="cssP">text-transform</span></td><td><em>capitalization of text </em></td></tr>
-                                    <tr><td><span class="cssP">top</span></td><td><em>top offset for relative and absolute elements </em></td></tr>
-                                    <tr><td><span class="cssP">transform</span></td><td><em>2D 3D transformation. See widget. </em></td></tr>
-                                    <tr><td><span class="cssP">transform-origin</span></td><td><em>changes the position of transformed elements </em></td></tr>
-                                    <tr><td><span class="cssP">transform-style</span></td><td><em>render nested elements in 3D </em></td></tr>
-                                    <tr><td><span class="cssP">transition</span></td><td><em>transition properties in one line </em></td></tr>
-                                    <tr><td><span class="cssP">transition-delay</span></td><td><em>delay before transition effect start </em></td></tr>
-                                    <tr><td><span class="cssP">transition-duration</span></td><td><em>transition effect duration </em></td></tr>
-                                    <tr><td><span class="cssP">transition-property</span></td><td><em>which CSS property is the transition affecting </em></td></tr>
-                                    <tr><td><span class="cssP">transition-timing-function</span></td><td><em>speed curve of the transition </em></td></tr>
-                                    <tr><td><span class="cssP">unicode-bidi</span></td><td><em>should the text be overridden to support more languages </em></td></tr>
-                                    <tr><td><span class="cssP">user-select</span></td><td><em>disable user content selection </em></td></tr>
-                                    <tr><td><span class="cssP">vertical-align</span></td><td><em>vertical alignment </em></td></tr>
-                                    <tr><td><span class="cssP">visibility</span></td><td><em>visibility:hidden elements leave a gap  </em></td></tr>
-                                    <tr><td><span class="cssP">white-space</span></td><td><em>how are white-spaces handled </em></td></tr>
-                                    <tr><td><span class="cssP">width</span></td><td><em>width of an element </em></td></tr>
-                                    <tr><td><span class="cssP">word-break</span></td><td><em>text breaking rules when text reaches the end of the container </em></td></tr>
-                                    <tr><td><span class="cssP">word-spacing</span></td><td><em>size of white space between words </em></td></tr>
-                                    <tr><td><span class="cssP">word-wrap</span></td><td><em>break long words and wrap onto the next line </em></td></tr>
-                                    <tr><td><span class="cssP">z-index</span></td><td><em>stack order of the element </em></td></tr>
+                                    <tr>
+                                        <td><span class="cssP">align-content</span></td>
+                                        <td><em>behavior of the flex-wrap property</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">align-items</span></td>
+                                        <td><em>alignment for items inside the container</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">align-self</span></td>
+                                        <td><em>alignment for the selected item</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">all</span></td>
+                                        <td><em>changes all properties</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">animation</span></td>
+                                        <td><em>binds an animation to an element</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">animation-delay</span></td>
+                                        <td><em>delays animation start</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">animation-direction</span></td>
+                                        <td><em>reverse animation or in alternate cycles</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">animation-duration</span></td>
+                                        <td><em>animation duration in seconds or ms</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">animation-fill-mode</span></td>
+                                        <td><em>style when the animation is not playing</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">animation-iteration-count</span></td>
+                                        <td><em>number of an animation replays</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">animation-name</span></td>
+                                        <td><em>name for the @keyframes animation</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">animation-play-state</span></td>
+                                        <td><em>the animation is running or paused</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">animation-timing-function</span></td>
+                                        <td><em>speed curve of an animation</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">backface-visibility</span></td>
+                                        <td><em>is element visible when not facing the screen</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">background</span></td>
+                                        <td><em>all background properties in one declaration</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">background-attachment</span></td>
+                                        <td><em>is the background image fixed or scrolls</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">background-blend-mode</span></td>
+                                        <td><em>blending mode of each background layer</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">background-clip</span></td>
+                                        <td><em>painting area of the background</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">background-color</span></td>
+                                        <td><em>background color</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">background-image</span></td>
+                                        <td><em>background image</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">background-origin</span></td>
+                                        <td><em>where the background image is positioned</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">background-position</span></td>
+                                        <td><em>starting position of the background image</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">background-repeat</span></td>
+                                        <td><em>the way the background image is repeated</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">background-size</span></td>
+                                        <td><em>background image size</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">border</span></td>
+                                        <td><em>sets all border properties in one line</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">border-bottom</span></td>
+                                        <td><em>bottom border properties in one line</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">border-bottom-color</span></td>
+                                        <td><em>color of the bottom border</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">border-bottom-left-radius</span></td>
+                                        <td><em>border bottom left radius</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">border-bottom-right-radius</span></td>
+                                        <td><em>border bottom right radius</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">border-bottom-style</span></td>
+                                        <td><em>border bottom style</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">border-bottom-width</span></td>
+                                        <td><em>border bottom width</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">border-collapse</span></td>
+                                        <td><em>border collapse</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">border-color</span></td>
+                                        <td><em>border color</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">border-image</span></td>
+                                        <td><em>sets an image as border</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">border-image-outset</span></td>
+                                        <td><em>border image area extends beyond the border box</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">border-image-repeat</span></td>
+                                        <td><em>border image repeated, rounded or stretched</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">border-image-slice</span></td>
+                                        <td><em>how to slice the border image</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">border-image-source</span></td>
+                                        <td><em>path to the border image</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">border-image-width</span></td>
+                                        <td><em>border image width</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">border-left</span></td>
+                                        <td><em>left border properties in one line</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">border-left-color</span></td>
+                                        <td><em>border left color</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">border-left-style</span></td>
+                                        <td><em>border left style</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">border-left-width</span></td>
+                                        <td><em>border left width</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">border-radius</span></td>
+                                        <td><em>border radius of the four rounded corners</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">border-right</span></td>
+                                        <td><em>right border properties in one line</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">border-right-color</span></td>
+                                        <td><em>border right color</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">border-right-style</span></td>
+                                        <td><em>border right style</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">border-right-width</span></td>
+                                        <td><em>border right width</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">border-spacing</span></td>
+                                        <td><em>border spacing</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">border-style</span></td>
+                                        <td><em>border style</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">border-top</span></td>
+                                        <td><em>top border properties in one line</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">border-top-color</span></td>
+                                        <td><em>border top color</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">border-top-left-radius</span></td>
+                                        <td><em>border top left radius</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">border-top-right-radius</span></td>
+                                        <td><em>border top right radius</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">border-top-style</span></td>
+                                        <td><em>border top style</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">border-top-width</span></td>
+                                        <td><em>border top width</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">border-width</span></td>
+                                        <td><em>border width</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">bottom</span></td>
+                                        <td><em>bottom offset for relative and absolute elements</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">box-shadow</span></td>
+                                        <td><em>shadow to element</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">box-sizing</span></td>
+                                        <td><em>box sizing properties</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">caption-side</span></td>
+                                        <td><em>placement of a table caption</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">clear</span></td>
+                                        <td><em>deny floating of an element</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">clip</span></td>
+                                        <td><em>clip an absolutely positioned element</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">color</span></td>
+                                        <td><em>text color</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">column-count</span></td>
+                                        <td><em>divide the content in columns</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">column-fill</span></td>
+                                        <td><em>balanced fill or not</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">column-gap</span></td>
+                                        <td><em>gap between the columns</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">column-rule</span></td>
+                                        <td><em>separator between columns, like border</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">column-rule-color</span></td>
+                                        <td><em>column rule color</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">column-rule-style</span></td>
+                                        <td><em>column rule style</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">column-rule-width</span></td>
+                                        <td><em>column rule width</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">column-span</span></td>
+                                        <td><em>column span</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">column-width</span></td>
+                                        <td><em>column width</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">columns</span></td>
+                                        <td><em>set column-width and column-count</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">content</span></td>
+                                        <td><em>insert content :before and :after elements</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">counter-increment</span></td>
+                                        <td><em>count sections</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">counter-reset</span></td>
+                                        <td><em>reset counter</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">cursor</span></td>
+                                        <td><em>cursor type when element is hovered</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">direction</span></td>
+                                        <td><em>writing direction, Arabic is using rtl</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">display</span></td>
+                                        <td><em>box display type</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">empty-cells</span></td>
+                                        <td><em>hide borders and background on empty table cells</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">filter</span></td>
+                                        <td><em>image effects: grayscale, blur, invert etc.</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">flex</span></td>
+                                        <td><em>item length, relative to others inside the container</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">flex-basis</span></td>
+                                        <td><em>initial length of a flexible item</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">flex-direction</span></td>
+                                        <td><em>direction of the flexible items</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">flex-flow</span></td>
+                                        <td><em>shorthand for flex-direction and flex-wrap</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">flex-grow</span></td>
+                                        <td><em>how much the item will grow relative other items</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">flex-shrink</span></td>
+                                        <td><em>how to shrink the item relative to other items</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">flex-wrap</span></td>
+                                        <td><em>wrap flexible items</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">float</span></td>
+                                        <td><em>float elements left or right</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">font</span></td>
+                                        <td><em>all font properties in one line</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">@font-face</span></td>
+                                        <td><em>declare non-web-safe fonts</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">font-family</span></td>
+                                        <td><em>font of the element</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">font-size</span></td>
+                                        <td><em>font size</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">font-size-adjust</span></td>
+                                        <td><em>control font size if the first declared option is not available</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">font-stretch</span></td>
+                                        <td><em>widen or narrow text</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">font-style</span></td>
+                                        <td><em>font style: normal, italic, oblique</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">font-variant</span></td>
+                                        <td><em>set small-caps</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">font-weight</span></td>
+                                        <td><em>use bold or thin characters</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">hanging-punctuation</span></td>
+                                        <td><em>can a punctuation mark be placed outside the line box?</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">height</span></td>
+                                        <td><em>height of the element</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">justify-content</span></td>
+                                        <td><em>justifies flexible container's items horizontally if necessary</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">@keyframes</span></td>
+                                        <td><em>specifies the animation code</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">left</span></td>
+                                        <td><em>left offset for relative and absolute elements</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">letter-spacing</span></td>
+                                        <td><em>space between characters</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">line-height</span></td>
+                                        <td><em>line height of text or inline-block elements</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">list-style</span></td>
+                                        <td><em>all list properties in one line</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">list-style-image</span></td>
+                                        <td><em>replace the list item marker with an image</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">list-style-position</span></td>
+                                        <td><em>list item markers inside or outside the content flow</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">list-style-type</span></td>
+                                        <td><em>set the type of the list item marker</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">margin</span></td>
+                                        <td><em>set the top, right, bottom and left margins in one line</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">margin-bottom</span></td>
+                                        <td><em>bottom margin</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">margin-left</span></td>
+                                        <td><em>left margin</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">margin-right</span></td>
+                                        <td><em>right margin</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">margin-top</span></td>
+                                        <td><em>margin top</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">max-height</span></td>
+                                        <td><em>maximum height of element</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">max-width</span></td>
+                                        <td><em>maximum width of element</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">@media</span></td>
+                                        <td><em>see media queries</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">min-height</span></td>
+                                        <td><em>minimum height</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">min-width</span></td>
+                                        <td><em>minimum width</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">nav-down</span></td>
+                                        <td><em>where to navigate when the the arrow-down button is pressed</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">nav-index</span></td>
+                                        <td><em>sets sequential navigation order</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">nav-left</span></td>
+                                        <td><em>where to navigate when the the arrow-left button is pressed</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">nav-right</span></td>
+                                        <td><em>where to navigate when the the arrow-right button is pressed</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">nav-up</span></td>
+                                        <td><em>where to navigate when the the arrow-up button is pressed</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">opacity</span></td>
+                                        <td><em>transparency level of an element</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">order</span></td>
+                                        <td><em>reorder elements in a container</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">outline</span></td>
+                                        <td><em>drow an outer border around elements</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">outline-color</span></td>
+                                        <td><em>outline color</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">outline-offset</span></td>
+                                        <td><em>gap between the element and the outline</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">outline-style</span></td>
+                                        <td><em>outline style</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">outline-width</span></td>
+                                        <td><em>outline width</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">overflow</span></td>
+                                        <td><em>hide, display or scroll if the content overflows its container</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">overflow-x</span></td>
+                                        <td><em>horizontal overflow</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">overflow-y</span></td>
+                                        <td><em>vertical overflow</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">padding</span></td>
+                                        <td><em>padding between the element border and content</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">padding-bottom</span></td>
+                                        <td><em>padding bottom</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">padding-left</span></td>
+                                        <td><em>padding left</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">padding-right</span></td>
+                                        <td><em>padding right</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">padding-top</span></td>
+                                        <td><em>padding top</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">page-break-after</span></td>
+                                        <td><em>adds page break after an element</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">page-break-before</span></td>
+                                        <td><em>adds page break before an element</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">page-break-inside</span></td>
+                                        <td><em>allow page break inside an element</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">perspective</span></td>
+                                        <td><em>how many pixels the 3D element is placed from the view</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">perspective-origin</span></td>
+                                        <td><em>where is the 3D element based in the x- and y-axis</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">position</span></td>
+                                        <td><em>positioning type: absolute, fixed, relative, static</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">quotes</span></td>
+                                        <td><em>set quotation marks to wrap an element</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">resize</span></td>
+                                        <td><em>declare resizable elements</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">right</span></td>
+                                        <td><em>right offset for relative and absolute elements</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">tab-size</span></td>
+                                        <td><em>tab character space length</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">table-layout</span></td>
+                                        <td><em>table layout algorithm</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">text-align</span></td>
+                                        <td><em>horizontal alignment of text</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">text-align-last</span></td>
+                                        <td><em>horizontal alignment of last line of text</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">text-decoration</span></td>
+                                        <td><em>overline, underline or line-through the text</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">text-indent</span></td>
+                                        <td><em>indentation of the first line of the text</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">text-overflow</span></td>
+                                        <td><em>the way how overflowed content is marked (ellipsis)</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">text-shadow</span></td>
+                                        <td><em>text shadow</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">text-transform</span></td>
+                                        <td><em>capitalization of text</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">top</span></td>
+                                        <td><em>top offset for relative and absolute elements</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">transform</span></td>
+                                        <td><em>2D 3D transformation. See widget.</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">transform-origin</span></td>
+                                        <td><em>changes the position of transformed elements</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">transform-style</span></td>
+                                        <td><em>render nested elements in 3D</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">transition</span></td>
+                                        <td><em>transition properties in one line</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">transition-delay</span></td>
+                                        <td><em>delay before transition effect start</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">transition-duration</span></td>
+                                        <td><em>transition effect duration</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">transition-property</span></td>
+                                        <td><em>which CSS property is the transition affecting</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">transition-timing-function</span></td>
+                                        <td><em>speed curve of the transition</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">unicode-bidi</span></td>
+                                        <td><em>should the text be overridden to support more languages</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">user-select</span></td>
+                                        <td><em>disable user content selection</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">vertical-align</span></td>
+                                        <td><em>vertical alignment</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">visibility</span></td>
+                                        <td><em>visibility:hidden elements leave a gap</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">white-space</span></td>
+                                        <td><em>how are white-spaces handled</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">width</span></td>
+                                        <td><em>width of an element</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">word-break</span></td>
+                                        <td><em>text breaking rules when text reaches the end of the container</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">word-spacing</span></td>
+                                        <td><em>size of white space between words</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">word-wrap</span></td>
+                                        <td><em>break long words and wrap onto the next line</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cssP">z-index</span></td>
+                                        <td><em>stack order of the element</em></td>
+                                    </tr>
                                 </table>
                             </div>
                         </td>
-
                         <td class="nostyles" width="15rem"></td>
-
                         <td valign="top" class="nostyles" width="700rem">
                             <h3>Properties</h3>
                             <div class="properties">
                                 <div>
                                     <table>
-                                        <tr><td><span class="cssP">* </span></td><td><em>all elements</em></td></tr>
-                                        <tr><td><span class="cssP">div </span></td><td><em>all div tags </em></td></tr>
-                                        <tr><td><span class="cssP">div,p </span></td><td><em>all divs and paragraphs </em></td></tr>
-                                        <tr><td><span class="cssP">div p </span></td><td><em>paragraphs inside divs </em></td></tr>
-                                        <tr><td><span class="cssP">div &gt; p </span></td><td><em>all p tags, one level deep in div</em></td></tr>
-                                        <tr><td><span class="cssP">div + p </span></td><td><em>p tags immediately after div</em></td></tr>
-                                        <tr><td><span class="cssP">div ~ p </span></td><td><em>p tags preceded by div</em></td></tr>
-                                        <tr><td><span class="cssP">.classname </span></td><td><em>all elements with class </em></td></tr>
-                                        <tr><td><span class="cssP">#idname </span></td><td><em>element with ID </em></td></tr>
-                                        <tr><td><span class="cssP">div.classname </span></td><td><em>divs with certain classname</em></td></tr>
-                                        <tr><td><span class="cssP">div#idname </span></td><td><em>div with certain ID </em></td></tr>
-                                        <tr><td><span class="cssP">#idname * </span></td><td><em>all elements inside #idname</em></td></tr>
+                                        <tr>
+                                            <td><span class="cssP">*</span></td>
+                                            <td><em>all elements</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="cssP">div</span></td>
+                                            <td><em>all div tags</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="cssP">div,p</span></td>
+                                            <td><em>all divs and paragraphs</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="cssP">div p</span></td>
+                                            <td><em>paragraphs inside divs</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="cssP">div &gt; p</span></td>
+                                            <td><em>all p tags, one level deep in div</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="cssP">div + p</span></td>
+                                            <td><em>p tags immediately after div</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="cssP">div ~ p</span></td>
+                                            <td><em>p tags preceded by div</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="cssP">.classname</span></td>
+                                            <td><em>all elements with class</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="cssP">#idname</span></td>
+                                            <td><em>element with ID</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="cssP">div.classname</span></td>
+                                            <td><em>divs with certain classname</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="cssP">div#idname</span></td>
+                                            <td><em>div with certain ID</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="cssP">#idname *</span></td>
+                                            <td><em>all elements inside #idname</em></td>
+                                        </tr>
                                     </table>
                                 </div>
-                                <h4>Pseudo classes </h4>
+                                <h4>Pseudo classes</h4>
                                 <div>
                                     <table>
-                                        <tr><td><span class="cssP">a:link </span></td><td><em>link in normal state</em></td></tr>
-                                        <tr><td><span class="cssP">a:active </span></td><td><em>link in clicked state</em></td></tr>
-                                        <tr><td><span class="cssP">a:hover </span></td><td><em>link with mouse over it</em></td></tr>
-                                        <tr><td><span class="cssP">a:visited </span></td><td><em>visited link</em></d</td></tr>
-                                        <tr><td><span class="cssP">p::after{content:"yo";}</span></td><td><em>add content after p </em></td></tr>
-                                        <tr><td><span class="cssP">p::before </span></td><td><em>add content before p </em></td></tr>
-                                        <tr><td><span class="cssP">input:checked </span></td><td><em>checked inputs </em></td></tr>
-                                        <tr><td><span class="cssP">input:disabled </span></td><td><em>disabled inputs </em></td></tr>
-                                        <tr><td><span class="cssP">input:enabled </span></td><td><em>enabled inputs </em></td></tr>
-                                        <tr><td><span class="cssP">input:focus </span></td><td><em>input has focus </em></td></tr>
-                                        <tr><td><span class="cssP">input:in-range </span></td><td><em>value in range </em></td></tr>
-                                        <tr><td><span class="cssP">input:out-of-range </span></td><td><em>input value out of range </em></td></tr>
-                                        <tr><td><span class="cssP">input:valid </span></td><td><em>input with valid value </em></td></tr>
-                                        <tr><td><span class="cssP">input:invalid </span></td><td><em>input with invalid value </em></td></tr>
-                                        <tr><td><span class="cssP">input:optional </span></td><td><em>no required attribute </em></td></tr>
-                                        <tr><td><span class="cssP">input:required </span></td><td><em>input with requred attribute </em></td></tr>
-                                        <tr><td><span class="cssP">input:read-only </span></td><td><em>with readonly attribute </em></td></tr>
-                                        <tr><td><span class="cssP">input:read-write </span></td><td><em>no readonly attrib. </em></td></tr>
-                                        <tr><td><span class="cssP">div:empty </span></td><td><em>element with no children </em></td></tr>
-                                        <tr><td><span class="cssP">p::first-letter </span></td><td><em>first letter in p </em></td></tr>
-                                        <tr><td><span class="cssP">p::first-line </span></td><td><em>first line in p </em></td></tr>
-                                        <tr><td><span class="cssP">p:first-of-type </span></td><td><em>first of some type </em></td></tr>
-                                        <tr><td><span class="cssP">p:last-of-type </span></td><td><em>last of some type </em></td></tr>
-                                        <tr><td><span class="cssP">p:lang(en) </span></td><td><em>p with en language attribute </em></td></tr>
-                                        <tr><td><span class="cssP">:not(span) </span></td><td><em>element that's not a span </em></td></tr>
-                                        <tr><td><span class="cssP">p:first-child </span></td><td><em>first child of its parent </em></td></tr>
-                                        <tr><td><span class="cssP">p:last-child </span></td><td><em>last child of its parent </em></td></tr>
-                                        <tr><td><span class="cssP">p:nth-child(2) </span></td><td><em>second child of its parent </em></td></tr>
-                                        <tr><td><span class="cssP">p:nth-child(3n+1) </span></td><td><em>nth-child (an + b) formula</em></td></tr>
-                                        <tr><td><span class="cssP">p:nth-last-child(2) </span></td><td><em>second child from behind </em></td></tr>
-                                        <tr><td><span class="cssP">p:nth-of-type(2) </span></td><td><em>second p of its parent </em></td></tr>
-                                        <tr><td><span class="cssP">p:nth-last-of-type(2) </span></td><td><em>...from behind </em></td></tr>
-                                        <tr><td><span class="cssP">p:only-of-type </span></td><td><em>unique of its parent</em></td></tr>
-                                        <tr><td><span class="cssP">p:only-child </span></td><td><em>only child of its parent</em></td></tr>
-                                        <tr><td><span class="cssP">:root </span></td><td><em>documents root element </em></td></tr>
-                                        <tr><td><span class="cssP">::selection </span></td><td><em>portion selected by user </em></td></tr>
-                                        <tr><td><span class="cssP">:target </span></td><td><em>highlight active anchor </em></td></tr>
+                                        <tr>
+                                            <td><span class="cssP">a:link</span></td>
+                                            <td><em>link in normal state</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="cssP">a:active</span></td>
+                                            <td><em>link in clicked state</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="cssP">a:hover</span></td>
+                                            <td><em>link with mouse over it</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="cssP">a:visited</span></td>
+                                            <td><em>visited link</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="cssP">p::after{content:"yo";}</span></td>
+                                            <td><em>add content after p</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="cssP">p::before</span></td>
+                                            <td><em>add content before p</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="cssP">input:checked</span></td>
+                                            <td><em>checked inputs</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="cssP">input:disabled</span></td>
+                                            <td><em>disabled inputs</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="cssP">input:enabled</span></td>
+                                            <td><em>enabled inputs</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="cssP">input:focus</span></td>
+                                            <td><em>input has focus</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="cssP">input:in-range</span></td>
+                                            <td><em>value in range</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="cssP">input:out-of-range</span></td>
+                                            <td><em>input value out of range</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="cssP">input:valid</span></td>
+                                            <td><em>input with valid value</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="cssP">input:invalid</span></td>
+                                            <td><em>input with invalid value</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="cssP">input:optional</span></td>
+                                            <td><em>no required attribute</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="cssP">input:required</span></td>
+                                            <td><em>input with requred attribute</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="cssP">input:read-only</span></td>
+                                            <td><em>with readonly attribute</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="cssP">input:read-write</span></td>
+                                            <td><em>no readonly attrib.</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="cssP">div:empty</span></td>
+                                            <td><em>element with no children</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="cssP">p::first-letter</span></td>
+                                            <td><em>first letter in p</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="cssP">p::first-line</span></td>
+                                            <td><em>first line in p</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="cssP">p:first-of-type</span></td>
+                                            <td><em>first of some type</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="cssP">p:last-of-type</span></td>
+                                            <td><em>last of some type</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="cssP">p:lang(en)</span></td>
+                                            <td><em>p with en language attribute</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="cssP">:not(span)</span></td>
+                                            <td><em>element that's not a span</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="cssP">p:first-child</span></td>
+                                            <td><em>first child of its parent</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="cssP">p:last-child</span></td>
+                                            <td><em>last child of its parent</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="cssP">p:nth-child(2)</span></td>
+                                            <td><em>second child of its parent</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="cssP">p:nth-child(3n+1)</span></td>
+                                            <td><em>nth-child (an + b) formula</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="cssP">p:nth-last-child(2)</span></td>
+                                            <td><em>second child from behind</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="cssP">p:nth-of-type(2)</span></td>
+                                            <td><em>second p of its parent</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="cssP">p:nth-last-of-type(2)</span></td>
+                                            <td><em>...from behind</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="cssP">p:only-of-type</span></td>
+                                            <td><em>unique of its parent</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="cssP">p:only-child</span></td>
+                                            <td><em>only child of its parent</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="cssP">:root</span></td>
+                                            <td><em>documents root element</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="cssP">::selection</span></td>
+                                            <td><em>portion selected by user</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="cssP">:target</span></td>
+                                            <td><em>highlight active anchor</em></td>
+                                        </tr>
                                     </table>
                                 </div>
-                                <h4>Attribute selectors </h4>
+                                <h4>Attribute selectors</h4>
                                 <div>
                                     <table>
-                                        <tr><td><span class="cssP">a[target]</span></td><td><em>links with a target attribute </em></td></tr>
-                                        <tr><td><span class="cssP">a[target="_blank"] </span></td><td><em>links which open in new tab </em></td></tr>
-                                        <tr><td><span class="cssP">[title~="chair"] </span></td><td><em>title element containing a word </em></td></tr>
-                                        <tr><td><span class="cssP">[class^="chair"] </span></td><td><em>class starts with chair </em></td></tr>
-                                        <tr><td><span class="cssP">[class|="chair"] </span></td><td><em>class starts with the chair word </em></td></tr>
-                                        <tr><td><span class="cssP">[class*="chair"] </span></td><td><em>class contains chair </em></td></tr>
-                                        <tr><td><span class="cssP">[class$="chair"] </span></td><td><em>class ends with chair </em></td></tr>
-                                        <tr><td><span class="cssP">input[type="button"] </span></td><td><em>specified input type </em></td></tr>
+                                        <tr>
+                                            <td><span class="cssP">a[target]</span></td>
+                                            <td><em>links with a target attribute</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="cssP">a[target="_blank"]</span></td>
+                                            <td><em>links which open in new tab</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="cssP">[title~="chair"]</span></td>
+                                            <td><em>title element containing a word</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="cssP">[class^="chair"]</span></td>
+                                            <td><em>class starts with chair</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="cssP">[class|="chair"]</span></td>
+                                            <td><em>class starts with the chair word</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="cssP">[class*="chair"]</span></td>
+                                            <td><em>class contains chair</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="cssP">[class$="chair"]</span></td>
+                                            <td><em>class ends with chair</em></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="cssP">input[type="button"]</span></td>
+                                            <td><em>specified input type</em></td>
+                                        </tr>
                                     </table>
                                 </div>
                             </div>
