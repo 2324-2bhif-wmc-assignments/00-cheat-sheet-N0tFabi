@@ -133,3 +133,5 @@ dist
 *.pdf
 
 tmp.md
+*.markdown
+test.txt
