@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Document</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Document</h1>
+</header>
+<div class="ed15n151 gamut-xnwp68-StyledColumn e1y0e4q30">
+<div class="gamut-imw2wj-LayoutGrid eapwrau0">
+<div class="reviewCardTitleColumn gamut-cdomtw-StyledColumn e1y0e4q30">
+<section id="heading-css-z-index-property"
+class="styles_h3__VPpU9 styles_spacing-tight__REuA6 gamut-gy5le em4gu660">
+<h3 class="styles_h3__VPpU9">CSS <code
+class="styles_code__L5_fh">z-index</code> property</h3>
+</section>
+</div>
+<div class="reviewCardTextColumn gamut-1gampgi-StyledColumn e1y0e4q30">
+<div class="ef7pjk00 gamut-11xy6op ev5q66l0">
+<p>The CSS <code class="styles_code__L5_fh">z-index</code> property
+specifies how far back or how far forward an element will appear on a
+web page when it overlaps other elements.</p>
+<p>The <code class="styles_code__L5_fh">z-index</code> property uses
+integer values, which can be positive or negative values. The element
+with the highest <code class="styles_code__L5_fh">z-index</code> value
+will be at the foreground, while the element with the lowest <code
+class="styles_code__L5_fh">z-index</code> value will be at the back.</p>
+</div>
+</div>
+<div class="gamut-1a08trx-StyledColumn e1y0e4q30">
+
+</div>
+<div class="codeBlockColumn gamut-1hu5fhi-StyledColumn e1y0e4q30">
+<div class="gamut-1efsrtw-Box ebnwbv90">
+<p><code>css //`element1` will overlap `element2` .element1 { position: absolute;  z-index: 1; } .element2 { position: absolute;  z-index: -1;}</code></p>
+</div>
+</div>
+</div>
+<div class="gamut-imw2wj-LayoutGrid eapwrau0">
+<div class="reviewCardTitleColumn gamut-cdomtw-StyledColumn e1y0e4q30">
+<section id="heading-fixed-css-positioning"
+class="styles_h3__VPpU9 styles_spacing-tight__REuA6 gamut-gy5le em4gu660">
+<h3 class="styles_h3__VPpU9">Fixed CSS Positioning</h3>
+</section>
+</div>
+<div class="reviewCardTextColumn gamut-1gampgi-StyledColumn e1y0e4q30">
+<div class="ef7pjk00 gamut-11xy6op ev5q66l0">
+<p>Positioning in CSS provides designers and developers options for
+positioning HTML elements on a web page. The CSS <code
+class="styles_code__L5_fh">position</code> can be set to <code
+class="styles_code__L5_fh">static</code>, <code
+class="styles_code__L5_fh">relative</code>, <code
+class="styles_code__L5_fh">absolute</code> or <code
+class="styles_code__L5_fh">fixed</code>. When the CSS position has a
+value of <code class="styles_code__L5_fh">fixed</code>, it is set/pinned
+to a specific spot on a page. The fixed element stays the same
+regardless of scrolling. The navigation bar is a great example of an
+element that is often set to <code
+class="styles_code__L5_fh">position: fixed;</code>, enabling the user to
+scroll through the web page and still access the navigation bar.</p>
+</div>
+</div>
+<div class="gamut-1a08trx-StyledColumn e1y0e4q30">
+
+</div>
+<div class="codeBlockColumn gamut-1hu5fhi-StyledColumn e1y0e4q30">
+<div class="gamut-1efsrtw-Box ebnwbv90">
+<p><code>css #navbar {  position: fixed;}</code></p>
+</div>
+</div>
+</div>
+<div class="gamut-imw2wj-LayoutGrid eapwrau0">
+<div class="reviewCardTitleColumn gamut-cdomtw-StyledColumn e1y0e4q30">
+<section id="heading-css-display-property"
+class="styles_h3__VPpU9 styles_spacing-tight__REuA6 gamut-gy5le em4gu660">
+<h3 class="styles_h3__VPpU9">CSS <code
+class="styles_code__L5_fh">display</code> property</h3>
+</section>
+</div>
+<div class="reviewCardTextColumn gamut-1gampgi-StyledColumn e1y0e4q30">
+<div class="ef7pjk00 gamut-11xy6op ev5q66l0">
+<p>The CSS <code class="styles_code__L5_fh">display</code> property
+determines the type of render block for an element. The most common
+values for this property are <code
+class="styles_code__L5_fh">block</code>, <code
+class="styles_code__L5_fh">inline</code>, and <code
+class="styles_code__L5_fh">inline-block</code>.</p>
+<p><em>Block-level</em> elements take up the full width of their
+container with line breaks before and after, and can have their height
+and width manually adjusted.</p>
+<p><em>Inline</em> elements take up as little space as possible, flow
+horizontally, and cannot have their width or height manually
+adjusted.</p>
+<p><em>Inline-block</em> elements can appear next to each other, and can
+have their width and height manually adjusted.</p>
+</div>
+</div>
+<div class="gamut-1a08trx-StyledColumn e1y0e4q30">
+
+</div>
+<div class="codeBlockColumn gamut-1hu5fhi-StyledColumn e1y0e4q30">
+<div class="gamut-1efsrtw-Box ebnwbv90">
+<p><code>css .container1 {  display: block;}     .container2 {  display: inline;}     .container3 {  display: inline-block;}</code></p>
+</div>
+</div>
+</div>
+<div class="gamut-imw2wj-LayoutGrid eapwrau0">
+<div class="reviewCardTitleColumn gamut-cdomtw-StyledColumn e1y0e4q30">
+<section id="heading-css-position-absolute"
+class="styles_h3__VPpU9 styles_spacing-tight__REuA6 gamut-gy5le em4gu660">
+<h3 class="styles_h3__VPpU9">CSS <code
+class="styles_code__L5_fh">position: absolute</code></h3>
+</section>
+</div>
+<div class="reviewCardTextColumn gamut-1gampgi-StyledColumn e1y0e4q30">
+<div class="ef7pjk00 gamut-11xy6op ev5q66l0">
+<p>The value <code class="styles_code__L5_fh">absolute</code> for the
+CSS property <code class="styles_code__L5_fh">position</code> enables an
+element to ignore sibling elements and instead be positioned relative to
+its closest parent element that is positioned with <code
+class="styles_code__L5_fh">relative</code> or <code
+class="styles_code__L5_fh">absolute</code>. The <code
+class="styles_code__L5_fh">absolute</code> value removes an element
+entirely from the document flow. By using the positioning attributes
+<code class="styles_code__L5_fh">top</code>, <code
+class="styles_code__L5_fh">left</code>, <code
+class="styles_code__L5_fh">bottom</code> and <code
+class="styles_code__L5_fh">right</code>, an element can be positioned
+anywhere as expected.</p>
+</div>
+</div>
+<div class="gamut-1a08trx-StyledColumn e1y0e4q30">
+
+</div>
+<div class="codeBlockColumn gamut-1hu5fhi-StyledColumn e1y0e4q30">
+<div class="gamut-1efsrtw-Box ebnwbv90">
+<p><code>css .element {  position: absolute;}</code></p>
+</div>
+</div>
+</div>
+<div class="gamut-imw2wj-LayoutGrid eapwrau0">
+<div class="reviewCardTitleColumn gamut-cdomtw-StyledColumn e1y0e4q30">
+<section id="heading-css-position-relative"
+class="styles_h3__VPpU9 styles_spacing-tight__REuA6 gamut-gy5le em4gu660">
+<h3 class="styles_h3__VPpU9">CSS <code
+class="styles_code__L5_fh">position: relative</code></h3>
+</section>
+</div>
+<div class="reviewCardTextColumn gamut-1gampgi-StyledColumn e1y0e4q30">
+<div class="ef7pjk00 gamut-11xy6op ev5q66l0">
+<p>The value <code class="styles_code__L5_fh">relative</code> of the CSS
+<code class="styles_code__L5_fh">position</code> property enables an
+element to be positioned relative to where it would have originally been
+on a web page. The offset properties can be used to determine the actual
+position of the element relative to its original position. Without the
+offset properties, this declaration will have no effect on its
+positioning, it will act as the default value <code
+class="styles_code__L5_fh">static</code> of the <code
+class="styles_code__L5_fh">position</code> property.</p>
+</div>
+</div>
+<div class="gamut-1a08trx-StyledColumn e1y0e4q30">
+
+</div>
+<div class="codeBlockColumn gamut-1hu5fhi-StyledColumn e1y0e4q30">
+<div class="gamut-1efsrtw-Box ebnwbv90">
+<p><code>css .element {  position: relative;}</code></p>
+</div>
+</div>
+</div>
+<div class="gamut-imw2wj-LayoutGrid eapwrau0">
+<div class="reviewCardTitleColumn gamut-cdomtw-StyledColumn e1y0e4q30">
+<section id="heading-css-float-property"
+class="styles_h3__VPpU9 styles_spacing-tight__REuA6 gamut-gy5le em4gu660">
+<h3 class="styles_h3__VPpU9">CSS <code
+class="styles_code__L5_fh">float</code> property</h3>
+</section>
+</div>
+<div class="reviewCardTextColumn gamut-1gampgi-StyledColumn e1y0e4q30">
+<div class="ef7pjk00 gamut-11xy6op ev5q66l0">
+<p>The CSS <code class="styles_code__L5_fh">float</code> property
+determines how far left or how far right an element should float within
+its parent element. The value <code
+class="styles_code__L5_fh">left</code> floats an element to the left
+side of its container and the value <code
+class="styles_code__L5_fh">right</code> floats an element to the right
+side of its container. For the property <code
+class="styles_code__L5_fh">float</code>, the <code
+class="styles_code__L5_fh">width</code> of the container must be
+specified or the element will assume the full width of its containing
+element.</p>
+</div>
+</div>
+<div class="gamut-1a08trx-StyledColumn e1y0e4q30">
+
+</div>
+<div class="codeBlockColumn gamut-1hu5fhi-StyledColumn e1y0e4q30">
+<div class="gamut-1efsrtw-Box ebnwbv90">
+<p><code>css .left { float: left; } /* The content will float to the left side of the container. */ .right { float: right; }/* The content will float to the right side of the container. */</code></p>
+</div>
+</div>
+</div>
+<div class="gamut-imw2wj-LayoutGrid eapwrau0">
+<div class="reviewCardTitleColumn gamut-cdomtw-StyledColumn e1y0e4q30">
+<section id="heading-the-css-clear-property"
+class="styles_h3__VPpU9 styles_spacing-tight__REuA6 gamut-gy5le em4gu660">
+<h3 class="styles_h3__VPpU9">The CSS <code
+class="styles_code__L5_fh">clear</code> property</h3>
+</section>
+</div>
+<div class="reviewCardTextColumn gamut-1gampgi-StyledColumn e1y0e4q30">
+<div class="ef7pjk00 gamut-11xy6op ev5q66l0">
+<p>The CSS <code class="styles_code__L5_fh">clear</code> property
+specifies how an element should behave when it bumps into another
+element within the same containing element.The <code
+class="styles_code__L5_fh">clear</code> is usually used in combination
+with elements having the CSS <code
+class="styles_code__L5_fh">float</code> property. This determines on
+which sides floating elements are allowed to float.</p>
+</div>
+</div>
+<div class="gamut-1a08trx-StyledColumn e1y0e4q30">
+
+</div>
+<div class="codeBlockColumn gamut-1hu5fhi-StyledColumn e1y0e4q30">
+<div class="gamut-1efsrtw-Box ebnwbv90">
+<p><code>css .element { clear: left; } /*This determines that no other elements within the same containing element are allowed to float on the left side of this element.*/ .element { clear: right; } /*This determines that no other elements within the same containing element are allowed to float on the right side of this element.*/ .element { clear: both; } /*This determines that no elements within the same containing element are allowed to float on either side of this element.*/ .element { clear: none; } /*This determines that other elements within the same containing element are allowed to float on both side of this element.*/</code></p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -4,7 +4,7 @@
 		<meta charset="utf-8" />
 		<meta name="generator" content="pandoc" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-		<title>fbc41f42e8584bb5a7ca1c5b505dba96</title>
+		<title>Flex</title>
 		<style>
 			html {
 			  line-height: 1.5;
@@ -58,7 +58,7 @@
 			  color: #1a1a1a;
 			}
 			img {
-			  max-width: 100%;
+			  max-width: 50%;
 			}
 			h1, h2, h3, h4, h5, h6 {
 			  margin-top: 1.4em;
@@ -368,5 +368,235 @@
 				</strong>
 			</strong>
 		</p>
+		<h1 id="flexbox-properties">Flexbox properties</h1>
+		<p><img src="../../assets/images/flex/01-container.svg" /></p>
+		<h2 id="properties-for-the-parent-flex-container">Properties for the Parent (flex container)</h2>
+		<h3 id="display">display</h3>
+		<p>This defines a flex container; inline or block depending on the given value. It enables a flex context for all its direct children.</p>
+		<div class="sourceCode" id="cb1">
+			<pre class="sourceCode css"><code class="sourceCode css"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">.container</span> {</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">display</span>: <span class="dv">flex</span><span class="op">;</span> <span class="co">/* or inline-flex */</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>}</span></code></pre>
+		</div>
+		<p>Note that CSS columns have no effect on a flex container.</p>
+		<h3 id="flex-direction">flex-direction</h3>
+		<p><img src="../../assets/images/flex/flex-direction.svg" /></p>
+		<p>
+			This establishes the main-axis, thus defining the direction flex items are placed in the flex container. Flexbox is (aside from optional wrapping) a single-direction layout concept. Think of flex items as primarily laying out
+			either in horizontal rows or vertical columns.
+		</p>
+		<div class="sourceCode" id="cb2">
+			<pre class="sourceCode css"><code class="sourceCode css"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">.container</span> {</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">flex-direction</span>: row | row-reverse | <span class="dv">column</span> | column-reverse<span class="op">;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>}</span></code></pre>
+		</div>
+		<ul>
+			<li><code>row</code> (default): left to right in <code>ltr</code>; right to left in <code>rtl</code></li>
+			<li><code>row-reverse</code>: right to left in <code>ltr</code>; left to right in <code>rtl</code></li>
+			<li><code>column</code>: same as <code>row</code> but top to bottom</li>
+			<li><code>column-reverse</code>: same as <code>row-reverse</code> but bottom to top</li>
+		</ul>
+		<h3 id="flex-wrap">flex-wrap</h3>
+		<p><img src="../../assets/images/flex/flex-wrap.svg" /></p>
+		<p>By default, flex items will all try to fit onto one line. You can change that and allow the items to wrap as needed with this property.</p>
+		<div class="sourceCode" id="cb3">
+			<pre class="sourceCode css"><code class="sourceCode css"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">.container</span> {</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">flex-wrap</span>: <span class="dv">nowrap</span> | wrap | wrap-reverse<span class="op">;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>}</span></code></pre>
+		</div>
+		<ul>
+			<li><code>nowrap</code> (default): all flex items will be on one line</li>
+			<li><code>wrap</code>: flex items will wrap onto multiple lines, from top to bottom.</li>
+			<li><code>wrap-reverse</code>: flex items will wrap onto multiple lines from bottom to top.</li>
+		</ul>
+		<h3 id="flex-flow">flex-flow</h3>
+		<p>This is a shorthand for the <code>flex-direction</code> and <code>flex-wrap</code> properties, which together define the flex container’s main and cross axes. The default value is <code>row nowrap</code>.</p>
+		<div class="sourceCode" id="cb4">
+			<pre class="sourceCode css"><code class="sourceCode css"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">.container</span> {</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">flex-flow</span>: <span class="dv">column</span> wrap<span class="op">;</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>}</span></code></pre>
+		</div>
+		<h3 id="justify-content">justify-content</h3>
+		<p><img src="../../assets/images/flex/justify-content.svg" /></p>
+		<p>
+			This defines the alignment along the main axis. It helps distribute extra free space leftover when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size. It also exerts some
+			control over the alignment of items when they overflow the line.
+		</p>
+		<div class="sourceCode" id="cb5">
+			<pre class="sourceCode css"><code class="sourceCode css"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">.container</span> {</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">justify-content</span>: flex-start | flex-end | <span class="dv">center</span> | space-between | space-around | space-evenly | start | end | <span class="dv">left</span> | <span class="dv">right</span> ... + safe | unsafe<span class="op">;</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>}</span></code></pre>
+		</div>
+		<ul>
+			<li><code>flex-start</code> (default): items are packed toward the start of the flex-direction.</li>
+			<li><code>flex-end</code>: items are packed toward the end of the flex-direction.</li>
+			<li><code>start</code>: items are packed toward the start of the <code>writing-mode</code> direction.</li>
+			<li><code>end</code>: items are packed toward the end of the <code>writing-mode</code> direction.</li>
+			<li><code>left</code>: items are packed toward left edge of the container, unless that doesn’t make sense with the <code>flex-direction</code>, then it behaves like <code>start</code>.</li>
+			<li><code>right</code>: items are packed toward right edge of the container, unless that doesn’t make sense with the <code>flex-direction</code>, then it behaves like <code>end</code>.</li>
+			<li><code>center</code>: items are centered along the line</li>
+			<li><code>space-between</code>: items are evenly distributed in the line; first item is on the start line, last item on the end line</li>
+			<li>
+				<code>space-around</code>: items are evenly distributed in the line with equal space around them. Note that visually the spaces aren’t equal, since all the items have equal space on both sides. The first item will have one
+				unit of space against the container edge, but two units of space between the next item because that next item has its own spacing that applies.
+			</li>
+			<li><code>space-evenly</code>: items are distributed so that the spacing between any two items (and the space to the edges) is equal.</li>
+		</ul>
+		<p>
+			Note that that browser support for these values is nuanced. For example, <code>space-between</code> never got support from some versions of Edge, and start/end/left/right aren’t in Chrome yet. The safest values are
+			<code>flex-start</code>, <code>flex-end</code>, and <code>center</code>.
+		</p>
+		<p>
+			There are also two additional keywords you can pair with these values: <code>safe</code> and <code>unsafe</code>. Using <code>safe</code> ensures that however you do this type of positioning, you can’t push an element such that
+			it renders off-screen (e.g. off the top) in such a way the content can’t be scrolled too (called “data loss”). Using <code>unsafe</code> means you don’t care about that, and you’re willing to risk data loss. The default is
+			<code>safe</code>, but you can opt into <code>unsafe</code> if you want.
+		</p>
+		<h3 id="align-items">align-items</h3>
+		<p><img src="../../assets/images/flex/align-items.svg" /></p>
+		<p>
+			This defines the default behavior for how flex items are laid out along the <strong>cross axis</strong> on the current line. Think of it as the <code>justify-content</code> version for the cross-axis (perpendicular to the
+			main-axis).
+		</p>
+		<div class="sourceCode" id="cb6">
+			<pre class="sourceCode css"><code class="sourceCode css"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">.container</span> {</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">align-items</span>: stretch | flex-start | flex-end | <span class="dv">center</span> | <span class="dv">baseline</span> | first <span class="dv">baseline</span> | last <span class="dv">baseline</span> | start | end | self-start | self-end + ... safe | unsafe<span class="op">;</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>}</span></code></pre>
+		</div>
+		<ul>
+			<li><code>stretch</code> (default): stretch to fill the container (still respect min-width/max-width)</li>
+			<li>
+				<code>flex-start</code> / <code>start</code> / <code>self-start</code>: items are placed at the start of the cross axis. The difference between these is subtle, and is about respecting the <code>flex-direction</code> rules
+				or the <code>writing-mode</code> rules.
+			</li>
+			<li>
+				<code>flex-end</code> / <code>end</code> / <code>self-end</code>: items are placed at the end of the cross axis. The difference again is subtle and is about respecting <code>flex-direction</code> rules vs.
+				<code>writing-mode</code> rules.
+			</li>
+			<li><code>center</code>: items are centered in the cross-axis</li>
+			<li><code>baseline</code>: items are aligned such as their baselines align</li>
+		</ul>
+		<p>
+			The <code>safe</code> and <code>unsafe</code> modifier keywords can be used in conjunction with all the rest of these keywords (although note
+			<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-items">browser support</a>), and deal with helping you prevent aligning elements such that the content becomes inaccessible.
+		</p>
+		<h3 id="align-content">align-content</h3>
+		<p><img src="../../assets/images/flex/align-content.svg" /></p>
+		<p>This aligns a flex container’s lines within when there is extra space in the cross-axis, similar to how <code>justify-content</code> aligns individual items within the main-axis.</p>
+		<p>
+			<strong>Note:</strong> This property only takes effect on multi-line flexible containers, where <code>flex-wrap</code> is set to either <code>wrap</code> or <code>wrap-reverse</code>). A single-line flexible container
+			(i.e. where <code>flex-wrap</code> is set to its default value, <code>no-wrap</code>) will not reflect <code>align-content</code>.
+		</p>
+		<div class="sourceCode" id="cb7">
+			<pre class="sourceCode css"><code class="sourceCode css"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">.container</span> {</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">align-content</span>: flex-start | flex-end | <span class="dv">center</span> | space-between | space-around | space-evenly | stretch | start | end | <span class="dv">baseline</span> | first <span class="dv">baseline</span> | last <span class="dv">baseline</span> + ... safe | unsafe<span class="op">;</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>}</span></code></pre>
+		</div>
+		<ul>
+			<li><code>normal</code> (default): items are packed in their default position as if no value was set.</li>
+			<li>
+				<code>flex-start</code> / <code>start</code>: items packed to the start of the container. The (more supported) <code>flex-start</code> honors the <code>flex-direction</code> while <code>start</code> honors the
+				<code>writing-mode</code> direction.
+			</li>
+			<li>
+				<code>flex-end</code> / <code>end</code>: items packed to the end of the container. The (more support) <code>flex-end</code> honors the <code>flex-direction</code> while end honors the <code>writing-mode</code> direction.
+			</li>
+			<li><code>center</code>: items centered in the container</li>
+			<li><code>space-between</code>: items evenly distributed; the first line is at the start of the container while the last one is at the end</li>
+			<li><code>space-around</code>: items evenly distributed with equal space around each line</li>
+			<li><code>space-evenly</code>: items are evenly distributed with equal space around them</li>
+			<li><code>stretch</code>: lines stretch to take up the remaining space</li>
+		</ul>
+		<p>
+			The <code>safe</code> and <code>unsafe</code> modifier keywords can be used in conjunction with all the rest of these keywords (although note
+			<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-items">browser support</a>), and deal with helping you prevent aligning elements such that the content becomes inaccessible.
+		</p>
+		<h3 id="gap-row-gap-column-gap">gap, row-gap, column-gap</h3>
+		<p><img src="../../assets/images/flex/gap-1.svg" /></p>
+		<p>
+			<a href="https://css-tricks.com/almanac/properties/g/gap/">The <code>gap</code> property</a> explicitly controls the space between flex items. It applies that spacing <em>only between items</em> not on the outer edges.
+		</p>
+		<div class="sourceCode" id="cb8">
+			<pre class="sourceCode css"><code class="sourceCode css"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">.container</span> {</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">display</span>: <span class="dv">flex</span><span class="op">;</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">...</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">gap</span>: <span class="dv">10</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">gap</span>: <span class="dv">10</span><span class="dt">px</span> <span class="dv">20</span><span class="dt">px</span><span class="op">;</span> <span class="co">/* row-gap column gap */</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">row-gap</span>: <span class="dv">10</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>    <span class="kw">column-gap</span>: <span class="dv">20</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>}</span></code></pre>
+		</div>
+		<p>
+			The behavior could be thought of as a <em>minimum</em> gutter, as if the gutter is bigger somehow (because of something like <code>justify-content: space-between;</code>) then the gap will only take effect if that space would
+			end up smaller.
+		</p>
+		<p>It is not exclusively for flexbox, <code>gap</code> works in grid and multi-column layout as well.</p>
+		<p><img src="../../assets/images/flex/02-items.svg" /></p>
+		<h2 id="properties-for-the-children">Properties for the Children</h2>
+		<h3 id="order">order</h3>
+		<p><img src="../../assets/images/flex/order.svg" /></p>
+		<p>By default, flex items are laid out in the source order. However, the <code>order</code> property controls the order in which they appear in the flex container.</p>
+		<div class="sourceCode" id="cb9">
+			<pre class="sourceCode css"><code class="sourceCode css"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">.item</span> {</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">order</span>: <span class="dv">5</span><span class="op">;</span> <span class="co">/* default is 0 */</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>}</span></code></pre>
+		</div>
+		<p>Items with the same <code>order</code> revert to source order.</p>
+		<h3 id="flex-grow">flex-grow</h3>
+		<p><img src="../../assets/images/flex/flex-grow.svg" /></p>
+		<p>This defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take up.</p>
+		<p>
+			If all items have <code>flex-grow</code> set to <code>1</code>, the remaining space in the container will be distributed equally to all children. If one of the children has a value of <code>2</code>, that child would take up
+			twice as much of the space either one of the others (or it will try, at least).
+		</p>
+		<div class="sourceCode" id="cb10">
+			<pre class="sourceCode css"><code class="sourceCode css"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">.item</span> {</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">flex-grow</span>: <span class="dv">4</span><span class="op">;</span> <span class="co">/* default 0 */</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>}</span></code></pre>
+		</div>
+		<p>Negative numbers are invalid.</p>
+		<h3 id="flex-shrink">flex-shrink</h3>
+		<p>This defines the ability for a flex item to shrink if necessary.</p>
+		<div class="sourceCode" id="cb11">
+			<pre class="sourceCode css"><code class="sourceCode css"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">.item</span> {</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">flex-shrink</span>: <span class="dv">3</span><span class="op">;</span> <span class="co">/* default 1 */</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>}</span></code></pre>
+		</div>
+		<p>Negative numbers are invalid.</p>
+		<h3 id="flex-basis">flex-basis</h3>
+		<p>
+			This defines the default size of an element before the remaining space is distributed. It can be a length (e.g. 20%, 5rem, etc.) or a keyword. The <code>auto</code> keyword means “look at my width or height property” (which was
+			temporarily done by the <code>main-size</code> keyword until deprecated). The <code>content</code> keyword means “size it based on the item’s content” – this keyword isn’t well supported yet, so it’s hard to test and harder to
+			know what its brethren <code>max-content</code>, <code>min-content</code>, and <code>fit-content</code> do.
+		</p>
+		<div class="sourceCode" id="cb12">
+			<pre class="sourceCode css"><code class="sourceCode css"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">.item</span> {</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">flex-basis</span>:  | <span class="bu">auto</span><span class="op">;</span> <span class="co">/* default auto */</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>}</span></code></pre>
+		</div>
+		<p>
+			If set to <code>0</code>, the extra space around content isn’t factored in. If set to <code>auto</code>, the extra space is distributed based on its <code>flex-grow</code> value.
+			<a href="http://www.w3.org/TR/css3-flexbox/images/rel-vs-abs-flex.svg">See this graphic.</a>
+		</p>
+		<h3 id="flex">flex</h3>
+		<p>
+			This is the shorthand for <code>flex-grow,</code> <code>flex-shrink</code> and <code>flex-basis</code> combined. The second and third parameters (<code>flex-shrink</code> and <code>flex-basis</code>) are optional. The default is
+			<code>0 1 auto</code>, but if you set it with a single number value, like <code>flex: 5;</code>, that changes the <code>flex-basis</code> to 0%, so it’s like setting <code>flex-grow: 5; flex-shrink: 1; flex-basis: 0%;</code>.
+		</p>
+		<div class="sourceCode" id="cb13">
+			<pre class="sourceCode css"><code class="sourceCode css"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">.item</span> {</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">flex</span>: <span class="dv">none</span> | [ &lt;<span class="st">&#39;flex-grow&#39;</span>&gt; &lt;<span class="st">&#39;flex-shrink&#39;</span>&gt;? || &lt;<span class="st">&#39;flex-basis&#39;</span>&gt; ]</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>}</span></code></pre>
+		</div>
+		<p><strong>It is recommended that you use this shorthand property</strong> rather than set the individual properties. The shorthand sets the other values intelligently.</p>
+		<h3 id="align-self">align-self</h3>
+		<p><img src="../../assets/images/flex/align-self.svg" /></p>
+		<p>This allows the default alignment (or the one specified by <code>align-items</code>) to be overridden for individual flex items.</p>
+		<p>Please see the <code>align-items</code> explanation to understand the available values.</p>
+		<div class="sourceCode" id="cb14">
+			<pre class="sourceCode css"><code class="sourceCode css"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">.item</span> {</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">align-self</span>: <span class="bu">auto</span> | flex-start | flex-end | <span class="dv">center</span> | <span class="dv">baseline</span> | stretch<span class="op">;</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>}</span></code></pre>
+		</div>
+		<p>Note that <code>float</code>, <code>clear</code> and <code>vertical-align</code> have no effect on a flex item.</p>
 	</body>
 </html>
