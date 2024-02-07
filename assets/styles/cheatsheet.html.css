@@ -1,0 +1,30 @@
+.cheat-sheet-container {
+    padding-left: 10vw;
+    padding-right: 10vw;
+    margin-top: 25vh;
+}
+
+.table-noborder {
+    border: none;
+}
+
+.table-noborder th,
+.table-noborder td {
+    border: none;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table,
+th,
+td {
+    border: 1px solid #000;
+}
+
+th,
+td {
+    padding: 10px;
+}

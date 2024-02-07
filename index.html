@@ -4,31 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
-    <link href="assets/styles/style.css" rel="stylesheet">
+    <link href="assets/styles/index.html.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/glass_panel.css">
+    <link rel="stylesheet" href="assets/styles/cards.css">
+    <link rel="stylesheet" href="assets/styles/animations.css">
+    <link rel="stylesheet" href="assets/styles/general.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
-    <nav class="header">
-        <a href="sites/cheatsheet.html">Cheat Sheet</a>
-        <a href="sites/readingAssignments.html">Reading Assignments</a>
-        <a href="sites/tutorials.html">Tutorials</a>
-        <a href="sites/quizzes.html">Quizzes / Tests</a>
+
+    <nav class="glass-panel">
+        <a href="index.html" class="glass-button translate-y">Home</a>
+        <a href="sites/cheatsheet.html" class="glass-button translate-y">Cheat Sheet</a>
+        <a href="sites/readingAssignments.html" class="glass-button translate-y">Reading Assignments</a>
+        <a href="sites/tutorials.html" class="glass-button translate-y">Tutorials</a>
+        <a href="sites/quizzes.html" class="glass-button translate-y">Quizzes / Tests</a>
     </nav>
 
     <div class="container">
-        <div class="innerContainer">
-            <img src="assets/images/html.png" height="250rem" class="logo"><br>
-            HTML ist eine textbasierte Programmiersprache mit der den Inhalt von Webseiten definieren kann.
+        <div class="card translate-size cursor-pointer">
+            <img src="assets/images/html.png" width="250rem" class="logo">
+            <p class="card-footer">
+                HTML ist eine textbasierte Programmiersprache mit der den Inhalt von Webseiten definieren kann.
+            </p>
         </div>
-        <div class="innerContainer">
-            <img src="assets/images/css.png" height="250rem" class="logo">
-            CSS beschreibt, wie Elemente aussehen und kann ihre Eigenschaften bei bestimmten Events ändern (Subklassen, zB Maus über element, hover)
+        <div class="card translate-size cursor-pointer">
+            <img src="assets/images/css.png" width="250rem" class="logo">
+            <p class="card-footer">
+                CSS beschreibt, wie Elemente aussehen und kann ihre Eigenschaften bei bestimmten Events ändern (Subklassen, zB Maus über element, hover)
+            </p>
         </div>
-        <div class="innerContainer">
-            <img src="assets/images/js.png" height="250rem" class="logo">
-            JavaScript macht Webseiten dynamisch, das heißt es wird zB bei einem Knopfdruck ein bestimmter Code ausgeführt.
+        <div class="card translate-size cursor-pointer">
+            <img src="assets/images/js.png" width="250rem" class="logo">
+            <p class="card-footer">
+                JavaScript macht Webseiten dynamisch, das heißt es wird zB bei einem Knopfdruck ein bestimmter Code ausgeführt.
+            </p>
         </div>
     </div>
+
+    <script src="assets/scripts/animations.js"></script>
 
 </body>
 

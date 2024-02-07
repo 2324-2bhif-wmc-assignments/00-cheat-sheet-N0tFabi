@@ -1,0 +1,14 @@
+div.quizzesContainer {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10rem;
+    display: flex;
+}
+
+div.outerQuizzesContainer {
+    width: 100%;
+}
+
+div.quizzesContainer {
+    gap: 2rem;
+}

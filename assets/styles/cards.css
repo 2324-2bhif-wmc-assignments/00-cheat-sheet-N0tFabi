@@ -1,0 +1,34 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 250px;
+    margin: 0 auto;
+    margin-top: 5rem;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.45);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+    transition: transform 0.5s;
+    position: relative;
+    z-index: 1;
+}
+
+.card-active {
+    transform: scale(1.2);
+    position: relative;
+    z-index: 2;
+}
+
+.logo {
+    width: 100%; /* Make sure the image doesn't exceed the card width */
+    margin-bottom: 10px; /* Add some space between the image and the text */
+}
+
+.card-footer {
+    font-size: 0.65em;
+    color: #446;
+}

@@ -4,22 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <title>Tutorials</title>
-    <link href="../assets/styles/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/styles/glass_panel.css">
+    <link rel="stylesheet" href="../assets/styles/cards.css">
+    <link rel="stylesheet" href="../assets/styles/animations.css">
+    <link rel="stylesheet" href="../assets/styles/general.css">
+    <link rel="stylesheet" href="../assets/styles/tutorials.html.css">
+    <script src="../assets/styles/tailwind.js"></script>
 </head>
 
 <body>
-    <nav class="header">
-        <a href="cheatsheet.html">Cheat Sheet</a>
-        <a href="readingAssignments.html">Reading Assignments</a>
-        <a href="tutorials.html">Tutorials</a>
-        <a href="quizzes.html">Quizzes / Tests</a>
+    <nav class="glass-panel">
+        <a href="../index.html" class="glass-button translate-y text-black">Home</a>
+        <a href="cheatsheet.html" class="glass-button translate-y text-black">Cheat Sheet</a>
+        <a href="readingAssignments.html" class="glass-button translate-y text-black">Reading Assignments</a>
+        <a href="tutorials.html" class="glass-button translate-y text-black">Tutorials</a>
+        <a href="quizzes.html" class="glass-button translate-y text-black">Quizzes / Tests</a>
     </nav>
 
-    <div class="container verticalSpacing">
-        <div class="container readingAssignmentsLinks">
-            <a href="tutorials/tables.html">Tables</a>
-            <a href="tutorials/flex.html">Flex</a>
-            <a href="tutorials/lists.html">Lists</a>
+    <div id="bg"><img src="../assets/images/beams.jpg" alt="beams"/></div>
+
+    <div class="w-screen h-screen justify-center items-center flex gap-16">
+        <div class="hover:bg-black hover:text-white duration-700 flex rounded-lg">
+            <a href="tutorials/tables.html" class="p-3">Tables</a>
+        </div>
+        <div class="hover:bg-black hover:text-white duration-700 flex rounded-lg">
+            <a href="tutorials/flex.html" class="p-3">Flex</a>
+        </div>
+        <div class="hover:bg-black hover:text-white duration-700 flex rounded-lg">
+            <a href="tutorials/lists.html" class="p-3">Lists</a>
         </div>
     </div>
 

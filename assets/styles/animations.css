@@ -1,0 +1,26 @@
+.translate-size:hover {
+    transform: scale(1.025);
+}
+
+.translate-size:not(:hover) {
+    transform: scale(1);
+}
+
+.translate-size:not(:hover),
+.translate-size:hover {
+    transition-duration: 0.420s;
+}
+
+
+.translate-y:hover {
+    transform: translateY(0.125rem);
+}
+
+.translate-y:not(:hover) {
+    transform: translateY(0rem);
+}
+
+.translate-y:not(:hover),
+.translate-y:hover {
+    transition-duration: 0.420s;
+}

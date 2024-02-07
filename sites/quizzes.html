@@ -4,32 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <title>Quizzes</title>
-    <link href="../assets/styles/style.css" rel="stylesheet">
+    <script src="../assets/styles/tailwind.js"></script>
+    <link rel="stylesheet" href="../assets/styles/glass_panel.css">
+    <link rel="stylesheet" href="../assets/styles/cards.css">
+    <link rel="stylesheet" href="../assets/styles/animations.css">
+    <link rel="stylesheet" href="../assets/styles/general.css">
+    <!-- <link rel="stylesheet" href="../assets/styles/background.css"> -->
+    <link rel="stylesheet" href="../assets/styles/quizzes.html.css">
+    <link rel="stylesheet" href="../assets/styles/game_of_life.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <style id="gol-styles"></style>
 </head>
 
 <body>
-    <nav class="header noblur">
-        <a href="cheatsheet.html">Cheat Sheet</a>
-        <a href="readingAssignments.html">Reading Assignments</a>
-        <a href="tutorials.html">Tutorials</a>
-        <a href="quizzes.html">Quizzes / Tests</a>
-    </nav>
 
-    <div class="outerQuizzesContainer">
+    <table id="game" style="margin-left: 0rem; margin-right: 0rem; width: 100vw; height: 100vh"></table>
+    <div id="overlay" class="outerQuizzesContainer">
+        <nav class="glass-panel">
+            <a href="../index.html" class="glass-button translate-y text-black">Home</a>
+            <a href="cheatsheet.html" class="glass-button translate-y text-black">Cheat Sheet</a>
+            <a href="readingAssignments.html" class="glass-button translate-y text-black">Reading Assignments</a>
+            <a href="tutorials.html" class="glass-button translate-y text-black">Tutorials</a>
+            <a href="quizzes.html" class="glass-button translate-y text-black">Quizzes / Tests</a>
+        </nav>
+
         <div class="quizzesContainer">
-            <iframe src="../quizzes/WMC_Q1.pdf" width="48%" height="750rem"></iframe>
-            <iframe src="../quizzes/WMC_Q2.pdf" width="48%" height="750rem"></iframe>
+            <iframe src="../quizzes/WMC_Q1.pdf" width="45%" height="750rem"></iframe>
+            <iframe src="../quizzes/WMC_Q2.pdf" width="45%" height="750rem"></iframe>
         </div>
     
         <div class="quizzesContainer">
-            <iframe src="../quizzes/WMC_Q3.pdf" width="48%" height="750rem"></iframe>
-            <iframe src="../quizzes/WMC_Q4.pdf" width="48%" height="750rem"></iframe>
+            <iframe src="../quizzes/WMC_Q3.pdf" width="45%" height="750rem"></iframe>
+            <iframe src="../quizzes/WMC_Q4.pdf" width="45%" height="750rem"></iframe>
         </div>
 
         <div class="quizzesContainer">
-            <iframe src="../quizzes/WMC_Q5.pdf" width="48%" height="750rem"></iframe>
+            <iframe src="../quizzes/WMC_Q5.pdf" width="45%" height="750rem"></iframe>
         </div>
     </div>
+
+    <script src="../assets/scripts/game_of_life.js"></script>
 </body>
 
 </html>

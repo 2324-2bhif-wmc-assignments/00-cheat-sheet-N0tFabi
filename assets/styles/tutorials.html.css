@@ -1,0 +1,17 @@
+#bg {
+    position: fixed;
+    /* Change from absolute to fixed */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+    overflow: hidden;
+    /* You can remove overflow-x and overflow-y */
+}
+
+.btn-left:hover {
+    background-color: black;
+    color: white;
+    transition-duration: 1s;
+}

@@ -1,0 +1,14 @@
+.grid-card {
+    grid-template-columns: 3rem minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-rows: 3rem minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+}
+
+.writing-vertical-lr {
+    -ms-writing-mode: tb-lr;
+    writing-mode: vertical-lr;
+}
+
+.card-row {
+  justify-content: center;
+  gap: 5rem;
+}
