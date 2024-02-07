@@ -1,6 +1,6 @@
 div.quizzesContainer {
-    width: 100%;
-    justify-content: center;
+    width: 100vw;               /* full screen width */
+    justify-content: center;    /*  */
     margin-top: 10rem;
     display: flex;
 }

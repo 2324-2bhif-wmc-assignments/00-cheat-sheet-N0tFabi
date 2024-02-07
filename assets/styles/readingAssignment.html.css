@@ -1,29 +1,29 @@
 .mb-3 {
-    font-size: 0.75rem !important;
-    gap: 0rem !important;
+    font-size: 0.75rem !important;  /* set font size */
+    gap: 0rem !important;           /* make childs smooch eathother */
 }
 
 .text-xl {
-    font-size: 1.2rem !important;
+    font-size: 1.2rem !important;   /* set font size to something big */
 }
 
 img.completed-img {
-    background-image: url("https://videohive.img.customer.envatousercontent.com/files/d1d4b43a-07bb-424a-be67-d90062aaa927/inline_image_preview.jpg?auto=compress%2Cformat&fit=crop&crop=top&max-h=8000&max-w=590&s=fa8c5182152c27ece16b38b273cb4026");
+    background-image: url("https://videohive.img.customer.envatousercontent.com/files/d1d4b43a-07bb-424a-be67-d90062aaa927/inline_image_preview.jpg?auto=compress%2Cformat&fit=crop&crop=top&max-h=8000&max-w=590&s=fa8c5182152c27ece16b38b273cb4026"); /* set the background image */
 }
 
 img.in-progress-img {
     /* background-image: url("https://images.unsplash.com/photo-1616362179583-6b49a3371b1a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=512&amp;h=512&amp;q=90&amp;sat=-100"); */
-    background-image: url("https://videohive.img.customer.envatousercontent.com/files/d1d4b43a-07bb-424a-be67-d90062aaa927/inline_image_preview.jpg?auto=compress%2Cformat&fit=crop&crop=top&max-h=8000&max-w=590&s=fa8c5182152c27ece16b38b273cb4026");
+    background-image: url("https://videohive.img.customer.envatousercontent.com/files/d1d4b43a-07bb-424a-be67-d90062aaa927/inline_image_preview.jpg?auto=compress%2Cformat&fit=crop&crop=top&max-h=8000&max-w=590&s=fa8c5182152c27ece16b38b273cb4026"); /* set the background image */
 }
 
 .text-gray {
-    color: rgba(155, 155, 155, 0.9);
+    color: rgba(155, 155, 155, 0.9);    /* set the color (font) to gray-ish */
 }
 
 ul > li.mb-3 {
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.25rem; /* push the elements under the element 0.25rem away */
 }
 
 nav.glass-panel {
-    z-index: 30;
+    z-index: 30;    /* z index HEIUGBHSWZSBIGEO */
 }

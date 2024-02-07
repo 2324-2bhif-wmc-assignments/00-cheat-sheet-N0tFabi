@@ -1,0 +1,106 @@
+span {
+    color: black;
+}
+
+span.yellow {
+    background-color: yellow;
+}
+
+span.brown {
+    background-color: brown;
+    color: white;
+}
+
+span.gradient {
+    background: linear-gradient(to right, white, yellow);
+}
+
+span.orange {
+    background-color: orange;
+    color: black;
+}
+
+img.heisenberg {
+    src: url('https://www.oefb.at/oefb2/images/1278650591628556536_c37f1b0a8381fa54e9fa-1,0-320x320.png');
+    animation-name: shake;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+img.other-heisenberg {
+    animation-name: othershake;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0deg) scale(1);
+        filter: hue-rotate(0deg);
+        filter:contrast(1%);
+    }
+
+    25% {
+        transform: rotate(5deg) scale(1.1);
+        filter:contrast(100%);
+    }
+
+    50% {
+        transform: rotate(-5deg) scale(1);
+        filter:contrast(10000%);
+    }
+
+    75% {
+        transform: rotate(3deg) scale(1.05);
+        filter:contrast(100%);
+    }
+
+    100% {
+        transform: rotate(0deg) scale(1);
+        filter: hue-rotate(360deg);
+    }
+}
+
+@keyframes othershake {
+    0% {
+        transform: rotate(0deg) scale(1);
+        filter: hue-rotate(0deg);
+    }
+    25% {
+        transform: rotate(90deg) scale(1.2);
+        filter:contrast(100%);
+    }
+    50% {
+        transform: rotate(180deg) scale(0.8);
+        filter: contrast(1000%);
+    }
+    75% {
+        transform: rotate(270deg) scale(1.4);
+    }
+    100% {
+        transform: rotate(360deg) scale(1);
+        filter:contrast(100%);
+    }
+}
+
+.balls {
+    background: radial-gradient(circle, #FFC0CB, #A52A2A);
+    /* why are you using this GARBAGE OIPAUEFH )/PZUWAQDESHG TF)/WEQTGr9 */
+    background: -webkit-radial-gradient(circle, #FFC0CB, #A52A2A);
+    background: -moz-radial-gradient(circle, #FFC0CB, #A52A2A);
+    background: -o-radial-gradient(circle, #FFC0CB, #A52A2A);
+}
+
+.SPONGE {
+    position: fixed;
+    z-index: 9999; /* Ensure SpongeBob appears on top */
+}
+
+.double-speed {
+    animation: doubleSpeed 0.5s steps(20, end) infinite;
+}
+
+@keyframes doubleSpeed {
+    from { opacity: 1; }
+    to { opacity: 1; }
+}

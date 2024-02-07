@@ -26,13 +26,14 @@
             <a href="readingAssignments.html" class="glass-button translate-y text-black">Reading Assignments</a>
             <a href="tutorials.html" class="glass-button translate-y text-black">Tutorials</a>
             <a href="quizzes.html" class="glass-button translate-y text-black">Quizzes / Tests</a>
+            <a href="hehe.html" class="glass-button translate-y text-black">spaghetti</a>
         </nav>
 
         <div class="quizzesContainer">
             <iframe src="../quizzes/WMC_Q1.pdf" width="45%" height="750rem"></iframe>
             <iframe src="../quizzes/WMC_Q2.pdf" width="45%" height="750rem"></iframe>
         </div>
-    
+
         <div class="quizzesContainer">
             <iframe src="../quizzes/WMC_Q3.pdf" width="45%" height="750rem"></iframe>
             <iframe src="../quizzes/WMC_Q4.pdf" width="45%" height="750rem"></iframe>
@@ -43,7 +44,70 @@
         </div>
     </div>
 
-    <script src="../assets/scripts/game_of_life.js"></script>
+    <!-- <script src="../assets/scripts/game_of_life.js"></script> -->
+    <script>
+        const main = document.getElementById('game');
+        let cols = Math.floor(window.innerWidth / 10);
+        let rows = Math.floor(window.innerHeight / 10);
+
+        for (let i = 0; i < rows; i++) {
+            let row = document.createElement('tr');
+            let stateRow = [];
+
+            for (let j = 0; j < cols; j++) {
+                let el = document.createElement('td');
+                el.className = "cell";
+                el.classList.add("td-gol-" + i);
+                if (Math.random() > 0.812) {
+                    el.classList.add("alive");
+                }
+                row.appendChild(el);
+
+                let val = Math.round(Math.random() * .6);
+                stateRow.push(val);
+            }
+
+            main.appendChild(row);
+        }
+
+        let styleElement = document.getElementById("gol-styles");
+        let colorStops = [];
+
+        for (let i = 0; i < rows; i++) {
+            let progress = i / (rows - 1);
+            let color = interpolateColor('#25f6fc', '#f404fc', progress);
+            colorStops.push(`.td-gol-${i}.alive.cell { background-color: ${color}; }`);
+        }
+
+        styleElement.textContent = colorStops.join("\n");
+
+        function interpolateColor(startColor, endColor, progress) {
+            const startRGB = hexToRgb(startColor);
+            const endRGB = hexToRgb(endColor);
+
+            const interpolatedColor = {
+                r: Math.round(startRGB.r + ((endRGB.r - startRGB.r) * progress)),
+                g: Math.round(startRGB.g + ((endRGB.g - startRGB.g) * progress)),
+                b: Math.round(startRGB.b + ((endRGB.b - startRGB.b) * progress))
+            };
+
+            return rgbToHex(interpolatedColor.r, interpolatedColor.g, interpolatedColor.b);
+        }
+        
+        function hexToRgb(hex) {
+            const bigint = parseInt(hex.slice(1), 16);
+            return {
+                r: (bigint >> 16) & 255,
+                g: (bigint >> 8) & 255,
+                b: bigint & 255
+            };
+        }
+
+        function rgbToHex(r, g, b) {
+            return `#${(1 << 24 | r << 16 | g << 8 | b).toString(16).slice(1)}`;
+        }
+
+    </script>
 </body>
 
 </html>

@@ -1,17 +1,15 @@
 #bg {
-    position: fixed;
-    /* Change from absolute to fixed */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -100;
-    overflow: hidden;
-    /* You can remove overflow-x and overflow-y */
+    position: fixed;    /* Make element same place even if scrolled */
+    top: 0;             /* Align with the edge of parent */
+    left: 0;            /* Align with the edge of parent */
+    width: 100vw;       /* Makes the element's width the same as screen */
+    height: 100vh;      /* Makes the element's height same as screen height */
+    z-index: -100;      /* Places the element behind every other element (hopefully lol) */
+    overflow: hidden;   /* hide scroll bar */
 }
 
 .btn-left:hover {
-    background-color: black;
-    color: white;
-    transition-duration: 1s;
+    background-color: black;    /* makes background go black */
+    color: white;               /* makes color (font) go white */
+    transition-duration: 1s;      /* the properties above take 1s to transition from the default values to */
 }
